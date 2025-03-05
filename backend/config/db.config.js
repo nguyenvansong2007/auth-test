@@ -3,7 +3,7 @@ import { STRING } from "sequelize";
 const db = {
   HOST: "localhost",
   USER: "postgres",
-  PASSWORD: STRING(process.env.DB_PASSWORD),
+  PASSWORD: "1",
   DB: "auth_test",
   dialect: "postgres",
   pool: {

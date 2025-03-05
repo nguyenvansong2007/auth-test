@@ -9,9 +9,6 @@ export const UserModel =  (sequelize, Sequelize) => {
     password: {
       type: Sequelize.STRING
     }
-  }, {
-    timestamps: true,
-    tableName: 'users',
   });
 
   return User;

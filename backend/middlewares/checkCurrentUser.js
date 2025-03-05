@@ -6,14 +6,14 @@ export const checkCurrentUser = (req, res, next) => {
     if (!Authorities) {
         req.user = null;
         next(err);
-    }else {
+    } else {
         const token = Authorities.replace('Bearer ', '');
     }
 
     // try verify token
     try {
-        const {userId} = jwt.verify(token, process.env.JWT_SECRET);
-        req.user = {userId};
+        const { userId } = jwt.verify(token, process.env.JWT_SECRET);
+        req.user = { userId };
         next();
 
     } catch (error) {

@@ -2,9 +2,8 @@ import express from "express";
 import cors from "cors";
 import db from "./models/index.js";
 import authRoutes from "./routes/auth.routes.js";
-// import userRoutes from "./routes/user.routes.js";
 import roleRoutes from "./routes/role.routes.js";
-
+import {errorHandler} from "./middlewares/errorHandler.js";
 
 const app = express();
 
@@ -48,16 +47,22 @@ function initial() {
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "hello world." });
 });
 
 // routes
-// authRoutes(app);
-// userRoutes(app);
 app.use("/api/v1/roles", roleRoutes);
 app.use("/api/v1/auth", authRoutes);
 
+// unhandle route
+app.all('*', (req, res, next) => {
+  const err = new Error('the route cannot be found');
+  err.status = 404;
+  next(err);
+});
 
+// error handling
+app.use(errorHandler);
 
 
 // set port, listen for requests
