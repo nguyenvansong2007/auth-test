@@ -6,7 +6,7 @@ const { TokenExpiredError } = jwt;
 const ROLES = db.ROLES;
 
 
-const catchError = (err, res) => {
+export const catchError = (err, res) => {
   if (err instanceof TokenExpiredError) {
     return res.status(401).send({ message: "Ubauthorized! Access Token was expired!" });
   }
@@ -17,7 +17,7 @@ const catchError = (err, res) => {
 
 
 
-const verifyToken = (req, res, next) => {
+export const verifyToken = (req, res, next) => {
   let token = req.headers["x-access-token"];
 
   if (!token) {
@@ -39,7 +39,7 @@ const verifyToken = (req, res, next) => {
     });
 };
 
-const isAdmin = (req, res, next) => {
+export const isAdmin = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
       for (let i = 0; i < roles.length; i++) {
@@ -57,7 +57,7 @@ const isAdmin = (req, res, next) => {
   });
 };
 
-const isModerator = (req, res, next) => {
+export const isModerator = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
       for (let i = 0; i < roles.length; i++) {
@@ -74,7 +74,7 @@ const isModerator = (req, res, next) => {
   });
 };
 
-const isModeratorOrAdmin = (req, res, next) => {
+export const isModeratorOrAdmin = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
       for (let i = 0; i < roles.length; i++) {
@@ -96,66 +96,23 @@ const isModeratorOrAdmin = (req, res, next) => {
   });
 };
 
-
-
-const checkDuplicateUsernameOrEmail = (req, res, next) => {
-  // Username
-  User.findOne({
-    where: {
-      username: req.body.username
-    }
-  }).then(user => {
-    if (user) {
-      res.status(400).send({
-        message: "Failed! Username is already in use!"
-      });
-      return;
-    }
-
-    // Email
-    User.findOne({
-      where: {
-        email: req.body.email
+export const checkRole = (roles) => {
+  return (req, res, next) => {
+      if (!roles.includes(req.userRole)) {
+          return res.status(403).send({ message: "Require proper role!" });
       }
-    }).then(user => {
-      if (user) {
-        res.status(400).send({
-          message: "Failed! Email is already in use!"
-        });
-        return;
-      }
-
       next();
-    });
-  });
-};
-
-const checkRolesExisted = (req, res, next) => {
-  if (req.body.roles) {
-    for (let i = 0; i < req.body.roles.length; i++) {
-      if (!ROLES.includes(req.body.roles[i])) {
-        res.status(400).send({
-          message: "Failed! Role does not exist = " + req.body.roles[i]
-        });
-        return;
-      }
-    }
-  }
-
-  next();
+  };
 };
 
 
 
 
-
-
-export default {
-  verifyToken,
-  isAdmin,
-  isModerator,
-  isModeratorOrAdmin,
-  checkDuplicateUsernameOrEmail,
-  checkRolesExisted
-};
+// export default {
+//   catchError,
+//   verifyToken,
+//   isAdmin,
+//   isModerator,
+//   isModeratorOrAdmin,
+// };
 // module.exports = authJwt;

@@ -1,4 +1,4 @@
-import config from "../config/auth.config.js";
+import { auth_config } from "../config/auth.config.js";
 import { v4 as uuidv4 } from "uuid";
 
 const RefreshToken = (sequelize, Sequelize) => {
@@ -14,7 +14,7 @@ const RefreshToken = (sequelize, Sequelize) => {
   RefreshToken.createToken = async function (user) {
     let expiredAt = new Date();
 
-    expiredAt.setSeconds(expiredAt.getSeconds() + config.jwtRefreshExpiration);
+    expiredAt.setSeconds(expiredAt.getSeconds() + auth_config.jwtRefreshExpiration);
 
     let _token = uuidv4();
 

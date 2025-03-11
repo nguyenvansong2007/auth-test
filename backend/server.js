@@ -1,9 +1,12 @@
 import express from "express";
 import cors from "cors";
-import db from "./models/index.js";
-import authRoutes from "./routes/auth.routes.js";
-import roleRoutes from "./routes/role.routes.js";
-import {errorHandler} from "./middlewares/errorHandler.js";
+import db from "./src/models/index.js";
+import authRoutes from "./src/routes/auth.routes.js";
+import userRoutes from "./src/routes/user.routes.js";
+import projectRoutes from "./src/routes/project.routes.js";
+import { errorHandler } from "./src/middlewares/errorHandler.js";
+import connectDB from "./src/config/connectDB.js";
+
 
 const app = express();
 
@@ -20,13 +23,16 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
+connectDB();
 
 const Role = db.role;
 
-db.sequelize.sync({ force: true }).then(() => {
-  console.log('Drop and Resync Db');
-  initial();
-});
+// db.sequelize.sync({ force: true }).then(() => {
+//   console.log('Drop and Resync Db');
+//   initial();
+// });
+
+db.sequelize.sync();
 
 function initial() {
   Role.create({
@@ -51,8 +57,10 @@ app.get("/", (req, res) => {
 });
 
 // routes
-app.use("/api/v1/roles", roleRoutes);
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/users", userRoutes);
+app.use("api/v1/projects", projectRoutes);
+
 
 // unhandle route
 app.all('*', (req, res, next) => {
@@ -66,7 +74,7 @@ app.use(errorHandler);
 
 
 // set port, listen for requests
-const PORT = process.env.PORT || 2025;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
