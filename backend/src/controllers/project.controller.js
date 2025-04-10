@@ -21,13 +21,11 @@ export const createProject = (req, res) => {
 
   // Save Tutorial in the database
   Project.create(project)
-    .then(data => {
-      res.send(data);
-    })
+    .then(data => { res.send(data)})
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Tutorial."
+          err.message || "Some error occurred while creating the Project."
       });
     });
 };
@@ -44,7 +42,7 @@ export const findAllProject = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while retrieving tutorials."
+          err.message || "Some error occurred while retrieving projects."
       });
     });
 };
@@ -59,13 +57,13 @@ export const findOneProject = (req, res) => {
         res.send(data);
       } else {
         res.status(404).send({
-          message: `Cannot find Tutorial with id=${id}.`
+          message: `Cannot find project with id=${id}.`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error retrieving Tutorial with id=" + id
+        message: "Error retrieving Project with id=" + id
       });
     });
 };
@@ -80,17 +78,17 @@ export const updateProject = (req, res) => {
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Tutorial was updated successfully."
+          message: "Project was updated successfully."
         });
       } else {
         res.send({
-          message: `Cannot update Tutorial with id=${id}. Maybe Tutorial was not found or req.body is empty!`
+          message: `Cannot update project with id=${id}. Maybe project was not found or req.body is empty!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Error updating Tutorial with id=" + id
+        message: "Error updating project with id=" + id
       });
     });
 };
@@ -105,17 +103,17 @@ export const deleteProject = (req, res) => {
     .then(num => {
       if (num == 1) {
         res.send({
-          message: "Tutorial was deleted successfully!"
+          message: "Project was deleted successfully!"
         });
       } else {
         res.send({
-          message: `Cannot delete Tutorial with id=${id}. Maybe Tutorial was not found!`
+          message: `Cannot delete Project with id=${id}. Maybe project was not found!`
         });
       }
     })
     .catch(err => {
       res.status(500).send({
-        message: "Could not delete Tutorial with id=" + id
+        message: "Could not delete project with id=" + id
       });
     });
 };
@@ -127,12 +125,12 @@ export const deleteAllProject = (req, res) => {
     truncate: false
   })
     .then(nums => {
-      res.send({ message: `${nums} Tutorials were deleted successfully!` });
+      res.send({ message: `${nums} projects were deleted successfully!` });
     })
     .catch(err => {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while removing all tutorials."
+          err.message || "Some error occurred while removing all projects."
       });
     });
 };
@@ -140,13 +138,13 @@ export const deleteAllProject = (req, res) => {
 // Find all published Tutorials
 export const findAllPublishedProject = (req, res) => {
   Project.findAll({ where: { published: true } })
-  .then(data => {
-    res.send(data);
-  })
-  .catch(err => {
-    res.status(500).send({
-      message:
-        err.message || "Some error occurred while retrieving tutorials."
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving projects."
+      });
     });
-  });
 };

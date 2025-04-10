@@ -9,9 +9,9 @@ import Sequelize from 'sequelize';
 const sequelize = new Sequelize(
   "auth_test",
   "postgres",
-  "1",
+  "123",
   {
-    host: "localhost",
+    host: 'localhost',
     dialect: "postgres",
     pool: {
       max: 5,
@@ -36,18 +36,24 @@ db.project = ProjectsModel(sequelize, Sequelize)
 
 
 // định danh quan hệ
-db.role.belongsToMany(db.user, { through: "user_roles", foreignKey: "roleId", otherKey: "userId" });
-db.user.belongsToMany(db.role, { through: "user_roles", foreignKey: "userId", otherKey: "roleId" });
-db.refreshToken.belongsTo(db.user, { foreignKey: 'userId', targetKey: 'id' });
-db.user.hasOne(db.refreshToken, { foreignKey: 'userId', targetKey: 'id' });
+db.role.belongsToMany(db.user, {
+  through: "user_roles",
+  foreignKey: "roleId",
+  otherKey: "userId"
+});
 
+db.user.belongsToMany(db.role, {
+  through: "user_roles",
+  foreignKey: "userId",
+  otherKey: "roleId"
+});
 
-
-// db.project.belongsToMany(db.user, { through: "user_project" });
-// db.user.belongsToMany(db.project, { through: "user_project" });
-// db.project.belongsTo(db.user, { foreignKey: 'created_by' });
-
-// db.post.belongsTo(user, { foreignKey: "authorId", as: "userId" });
+db.refreshToken.belongsTo(db.user, {
+  foreignKey: 'userId', targetKey: 'id'
+});
+db.user.hasOne(db.refreshToken, {
+  foreignKey: 'userId', targetKey: 'id'
+});
 
 
 db.ROLES = ["user", "admin", "moderator"];

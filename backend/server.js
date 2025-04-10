@@ -5,7 +5,8 @@ import authRoutes from "./src/routes/auth.routes.js";
 import userRoutes from "./src/routes/user.routes.js";
 import projectRoutes from "./src/routes/project.routes.js";
 import { errorHandler } from "./src/middlewares/errorHandler.js";
-import connectDB from "./src/config/connectDB.js";
+import { connectDB } from "./src/config/connectDB.js";
+import roleRoutes from "./src/routes/role.routes.js";
 
 
 const app = express();
@@ -13,7 +14,7 @@ const app = express();
 
 // connect to frontend
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:5173"
 };
 app.use(cors(corsOptions));
 
@@ -22,6 +23,11 @@ app.use(express.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
+
+
+//config template engine
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
 
 connectDB();
 
@@ -32,34 +38,25 @@ const Role = db.role;
 //   initial();
 // });
 
-db.sequelize.sync();
+db.sequelize.sync()
 
 function initial() {
-  Role.create({
-    id: 1,
-    name: "user"
-  });
-
-  Role.create({
-    id: 2,
-    name: "moderator"
-  });
-
-  Role.create({
-    id: 3,
-    name: "admin"
-  });
+  Role.create({id: 1,name: "user"});
+  Role.create({id: 2,name: "moderator"});
+  Role.create({id: 3, name: "admin"});
 }
 
-// simple route
+// config template engine
 app.get("/", (req, res) => {
+  // res.render('index', req.query);
   res.json({ message: "hello world." });
 });
 
 // routes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/users", userRoutes);
-app.use("api/v1/projects", projectRoutes);
+app.use("/api/v1/projects", projectRoutes);
+app.use("/api/v1/roles", roleRoutes);
 
 
 // unhandle route

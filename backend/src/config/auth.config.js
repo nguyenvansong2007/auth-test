@@ -1,7 +1,7 @@
 export const auth_config = {
-    jwtExpiration: "1h", // Token hết hạn sau 1 giờ
-    jwtRefreshExpiration: "7d", // Refresh token hết hạn sau 7 ngày
-    secret: process.env.JWT_SECRET
+    secret: "secret-key",
+    jwtExpiration: 3600,           // 1 hour
+    jwtRefreshExpiration: 86400,   // 24 hours
 
     /* for test */
     // jwtExpiration: 60,          // 1 minute

@@ -1,12 +1,12 @@
-import Sequelize from 'sequelize';
+import { Sequelize } from "sequelize";
 
-const sequelize = new Sequelize(
-  "auth_test",
-  "postgres",
-  "1",
+export const config_db = new Sequelize(
+  'auth_test',// host
+  'postgres',// user
+  '123', // Password
   {
-    host: "localhost",
-    dialect: "postgres",
+    DB: 'localhost',  // db name
+    dialect: 'postgres', // database dialect
     pool: {
       max: 5,
       min: 0,
@@ -16,15 +16,17 @@ const sequelize = new Sequelize(
   }
 );
 
-const connectDB = async () => {
+export const connectDB = async () => {
   try {
-    await sequelize.authenticate();
+    await config_db.authenticate();
     console.log('Connect has been established successfully.');
+    return config_db;
   } catch (error) {
     console.error('Unable to connect to the database:', error);
+    process.exit(1);
   }
 };
 
-export default connectDB;
+// export default { connectDB, config_db };
 
 

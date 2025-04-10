@@ -1,57 +1,60 @@
+// 'use strict';
 import db from "../models/index.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import { auth_config } from "../config/auth.config.js";
+import { where } from "sequelize";
 
 const { user: User, role: Role, refreshToken: RefreshToken } = db;
 const Op = db.Sequelize.Op;
 
 
 // register 
-export const register = (req, res) => {
+export const register = async (req, res, next) => {
   // Save User to Database
-  User.create({
-    username: req.body.username,
-    email: req.body.email,
-    password: bcrypt.hashSync(req.body.password, 8)
-  })
-    .then(user => {
-      if (req.body.roles) {
-        Role.findAll({
-          where: {
-            name: {
-              [Op.or]: req.body.roles
-            }
-          }
-        }).then(roles => {
-          user.setRoles(roles).then(() => {
-            res.send({ message: "User was registered successfully!" });
-          });
-        });
-      } else {
-        // user role = 1
-        user.setRoles([1]).then(() => {
+
+  try {
+    const user = await User.create({
+      username: req.body.username,
+      email: req.body.email,
+      password: bcrypt.hashSync(req.body.password, 8)
+    })
+    if (req.body.roles) {
+      Role.findAll({
+        where: { name: { [Op.or]: req.body.roles } }
+      }).then(roles => {
+        user.setRoles(roles).then(() => {
           res.send({ message: "User was registered successfully!" });
         });
-      }
-    })
-    .catch(err => {
-      res.status(500).send({ message: err.message });
-    });
+      });
+    } else {
+      // user role = 1
+      user.setRoles([1]).then(() => {
+        res.send({ message: "User was registered successfully!" });
+      });
+    }
+
+  } catch (error) {
+    res.status(500).send({ message: err.message });
+    next(error);
+  }
 };
 
+
+
+// LOGIN
 export const login = (req, res) => {
   User.findOne({
     where: {
       username: req.body.username
     }
   })
-    .then(user => {
+    .then(async (user) => {
       if (!user) {
         return res.status(404).send({ message: "User Not found." });
       }
 
-      var passwordIsValid = bcrypt.compareSync(
+      const passwordIsValid = bcrypt.compareSync(
         req.body.password,
         user.password
       );
@@ -63,31 +66,32 @@ export const login = (req, res) => {
         });
       }
 
-      const token = jwt.sign({ id: user.id },
-        auth_config.secret,
-        {
-          algorithm: 'HS256',
-          allowInsecureKeySizes: true,
-          expiresIn: 86400, // 24 hours
-        });
+      const token = jwt.sign({ id: user.id }, auth_config.secret, {
+        expiresIn: auth_config.jwtExpiration
+      });
 
-      var authorities = [];
+      let refreshToken = await RefreshToken.createToken(user);
+
+      let authorities = [];
       user.getRoles().then(roles => {
         for (let i = 0; i < roles.length; i++) {
           authorities.push("ROLE_" + roles[i].name.toUpperCase());
         }
+
         res.status(200).send({
           id: user.id,
           username: user.username,
           email: user.email,
           roles: authorities,
-          accessToken: token
+          accessToken: token,
+          refreshToken: refreshToken,
         });
       });
     })
     .catch(err => {
       res.status(500).send({ message: err.message });
     });
+
 };
 
 
@@ -119,7 +123,7 @@ export const refreshToken = async (req, res) => {
     }
 
     const user = await refreshToken.getUser();
-    let newAccessToken = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
+    let newAccessToken = jwt.sign({ id: user.id }, auth_config.secret, {
       expiresIn: auth_config.jwtExpiration,
     });
 
@@ -131,6 +135,9 @@ export const refreshToken = async (req, res) => {
     return res.status(500).send({ message: err });
   }
 };
+
+
+
 
 export const getCurrentUser = async (req, res, next) => {
   try {
@@ -150,9 +157,3 @@ export const getCurrentUser = async (req, res, next) => {
   }
 }
 
-// export default {
-//   register,
-//   login,
-//   refreshToken,
-//   getCurrentUser,
-// }

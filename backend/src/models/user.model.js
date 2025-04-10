@@ -8,7 +8,8 @@ export const UserModel =  (sequelize, Sequelize) => {
     },
     password: {
       type: Sequelize.STRING
-    }
+    },
+    
   });
 
   return User;
