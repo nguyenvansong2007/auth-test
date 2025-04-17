@@ -1,30 +1,19 @@
 {
-  "name": "vue-auth",
+  "name": "nuxt-app",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/vue-fontawesome": "^3.0.0-5",
-    "axios": "^1.8.4",
-    "bootstrap": "^4.6.2",
-    "jquery": "^3.7.1",
-    "popper.js": "^1.16.1",
-    "vee-validate": "^4.15.0",
+    "nuxt": "^3.16.2",
+    "nuxt-app": "file:",
     "vue": "^3.5.13",
-    "vue-auth": "file:",
-    "vue-router": "^4.5.0",
-    "vuex": "^4.1.0",
-    "yup": "^1.6.1"
+    "vue-router": "^4.5.0"
   },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "vite": "^6.2.0"
-  }
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

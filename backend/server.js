@@ -2,11 +2,11 @@ import express from "express";
 import cors from "cors";
 import db from "./src/models/index.js";
 import authRoutes from "./src/routes/auth.routes.js";
-import userRoutes from "./src/routes/user.routes.js";
 import projectRoutes from "./src/routes/project.routes.js";
 import { errorHandler } from "./src/middlewares/errorHandler.js";
 import { connectDB } from "./src/config/connectDB.js";
-import roleRoutes from "./src/routes/role.routes.js";
+import userRoutes from "./src/routes/user.routes.js";
+import uploadRoutes from "./src/routes/upload.routes.js";
 
 
 const app = express();
@@ -48,17 +48,15 @@ function initial() {
 
 // config template engine
 app.get("/", (req, res) => {
-  // res.render('index', req.query);
-  res.json({ message: "hello world." });
+  res.render('index', { name: 'EJS Tester' });
+  // res.json({ message: "hello world." });
 });
 
 // routes
 app.use("/api/v1/auth", authRoutes);
-app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/projects", projectRoutes);
-app.use("/api/v1/roles", roleRoutes);
-
-
+app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/uploads", uploadRoutes);
 // unhandle route
 app.all('*', (req, res, next) => {
   const err = new Error('the route cannot be found');

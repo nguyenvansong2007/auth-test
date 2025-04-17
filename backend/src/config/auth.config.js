@@ -1,5 +1,5 @@
 export const auth_config = {
-    secret: "secret-key",
+    secret: 'secret_key',
     jwtExpiration: 3600,           // 1 hour
     jwtRefreshExpiration: 86400,   // 24 hours
 

@@ -1,12 +1,13 @@
 import { Sequelize } from "sequelize";
 
+
 export const config_db = new Sequelize(
-  'auth_test',// host
-  'postgres',// user
-  '123', // Password
+  "auth_test",
+  "postgres",
+  "123",
   {
-    DB: 'localhost',  // db name
-    dialect: 'postgres', // database dialect
+    host: 'localhost',
+    dialect: "postgres",
     pool: {
       max: 5,
       min: 0,

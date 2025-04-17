@@ -3,7 +3,6 @@ import db from "../models/index.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import { auth_config } from "../config/auth.config.js";
-import { where } from "sequelize";
 
 const { user: User, role: Role, refreshToken: RefreshToken } = db;
 const Op = db.Sequelize.Op;
@@ -16,8 +15,12 @@ export const register = async (req, res, next) => {
   try {
     const user = await User.create({
       username: req.body.username,
+      phonenumber: req.body.phonenumber,
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
+      company: req.body.company,
       email: req.body.email,
-      password: bcrypt.hashSync(req.body.password, 8)
+      password: bcrypt.hashSync(req.body.password, 8),
     })
     if (req.body.roles) {
       Role.findAll({
@@ -66,7 +69,7 @@ export const login = (req, res) => {
         });
       }
 
-      const token = jwt.sign({ id: user.id }, auth_config.secret, {
+      const token = jwt.sign({ id: user.id, role: user.role }, auth_config.secret, {
         expiresIn: auth_config.jwtExpiration
       });
 
@@ -81,6 +84,10 @@ export const login = (req, res) => {
         res.status(200).send({
           id: user.id,
           username: user.username,
+          phonenumber: user.phonenumber,
+          firstname: user.firstname,
+          lastname: user.lastname,
+          company: user.company,
           email: user.email,
           roles: authorities,
           accessToken: token,

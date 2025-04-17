@@ -1,19 +1,28 @@
 export const ProjectsModel = (sequelize, Sequelize) => {
-  const projects = sequelize.define("projects", {
-    
-    title: {
-      type: Sequelize.STRING
-    },
-    description: {
+  const Project = sequelize.define("projects", {
+    projectName: {
       type: Sequelize.STRING,
+      allowNull: false,
     },
-    published: {
-      type: Sequelize.BOOLEAN
+    projectNumber: {
+      type: Sequelize.STRING,
+      unique: true,
+      allowNull: false,
     },
-    // created_by: {
-    //   created_by: Sequelize.INTEGER,
-    // }
+    projectType: Sequelize.STRING,
+    template: Sequelize.STRING,
+    address: Sequelize.STRING,
+
+    timeZone: {
+      type: Sequelize.STRING,
+      defaultValue: "GMT+07:00",
+    },
+    projectValue: Sequelize.INTEGER,
+    createdBy: {
+      type: Sequelize.INTEGER,
+      allowNull: false,
+    },
   });
 
-  return projects;
+  return Project;
 };

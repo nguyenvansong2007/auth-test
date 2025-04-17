@@ -1,9 +1,6 @@
-import express from 'express';
+import path from 'path';
 
-const configViewEngine = () => {
-  app.use(express.static('../public'));
-  app.set('view engine', 'ejs');
-  app.set('views', '../');
+export const homePage = () => {
+  return res.sendFile(path.join(`${__dirname}/../views/index.html`));
 }
 
-export default configViewEngine;
