@@ -10,12 +10,12 @@ const imageFilter = (req, file, cb) => {
 
 var storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, __basedir + "/backend/static/assets/uploads/");
+    cb(null, __basedir + "/backend/uploads/");
   },
   filename: (req, file, cb) => {
     cb(null, `${Date.now()}-song-${file.originalname}`);
   },
 });
 
-var uploadFile = multer({ storage, imageFilter });
-export default uploadFile;
+var checkUploadFile = multer({ storage, imageFilter });
+export default checkUploadFile;

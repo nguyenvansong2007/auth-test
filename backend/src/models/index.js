@@ -9,9 +9,11 @@ import { FileModel } from "./file.model.js"
 
 
 const sequelize = new Sequelize(
+  //  process.env.DB_HOST,
   "auth_test",
   "postgres",
   "123",
+  // process.env.DB_PASSWORD,
   {
     host: 'localhost',
     dialect: "postgres",

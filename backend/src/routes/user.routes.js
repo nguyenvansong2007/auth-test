@@ -1,7 +1,8 @@
 import express from "express";
-import { getAllUsers, getUserById, updateUser, deleteUser } from "../controllers/user.controller.js";
+import { getAllUsers, getUserById, updateUser, deleteUser, userBorad, adminBoard, moderatorBoard } from "../controllers/user.controller.js";
 import { register } from "../controllers/auth.controller.js";
 import { verifyToken, isAdmin, isModerator, isModeratorOrAdmin } from "../middlewares/authJws.js";
+
 
 const router = express.Router();
 
@@ -20,5 +21,11 @@ router.route("/:id").put([verifyToken, isModeratorOrAdmin], updateUser);
 
 // Admin: Xóa user
 router.route("/:id").delete([verifyToken, isAdmin], deleteUser);
+
+// test
+router.route("/test/all").get(verifyToken);
+router.route("/test/user").get([verifyToken], userBorad);
+router.route("/test/admin").get([verifyToken, isAdmin], adminBoard);
+router.route("/test/moderator").get([verifyToken, isModerator], moderatorBoard);
 
 export default router;

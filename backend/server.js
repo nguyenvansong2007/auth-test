@@ -7,6 +7,7 @@ import { errorHandler } from "./src/middlewares/errorHandler.js";
 import { connectDB } from "./src/config/connectDB.js";
 import userRoutes from "./src/routes/user.routes.js";
 import uploadRoutes from "./src/routes/upload.routes.js";
+import {viewEngine} from "./src/config/viewEngine.js";
 
 
 const app = express();
@@ -26,10 +27,10 @@ app.use(express.urlencoded({ extended: true }));
 
 
 //config template engine
-app.set('views', './src/views');
-app.set('view engine', 'ejs');
-
+// app.set('views', './src/views');
+// app.set('view engine', 'ejs');
 connectDB();
+viewEngine(app);
 
 const Role = db.role;
 
@@ -41,9 +42,9 @@ const Role = db.role;
 db.sequelize.sync()
 
 function initial() {
-  Role.create({id: 1,name: "user"});
-  Role.create({id: 2,name: "moderator"});
-  Role.create({id: 3, name: "admin"});
+  Role.create({ id: 1, name: "user" });
+  Role.create({ id: 2, name: "moderator" });
+  Role.create({ id: 3, name: "admin" });
 }
 
 // config template engine
@@ -64,12 +65,13 @@ app.all('*', (req, res, next) => {
   next(err);
 });
 
+
 // error handling
 app.use(errorHandler);
 
 
 // set port, listen for requests
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}.`);
 });
