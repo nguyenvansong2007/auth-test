@@ -78,8 +78,18 @@ export const deleteUser = async (req, res) => {
 
 
 //test
+
+export const publicContent = (req, res) => {
+  res.json({
+    message: "PublicContent.",
+    status: 200,
+  });
+}
 export const userBorad = (req, res) => {
-  res.status(200).send("User Content.");
+  res.json({
+    message: "User Content.",
+    status: 200,
+  });
 }
 export const adminBoard = (req, res) => {
   res.status(200).send("Admin Content.");

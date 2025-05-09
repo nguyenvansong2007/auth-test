@@ -7,7 +7,7 @@ import { errorHandler } from "./src/middlewares/errorHandler.js";
 import { connectDB } from "./src/config/connectDB.js";
 import userRoutes from "./src/routes/user.routes.js";
 import uploadRoutes from "./src/routes/upload.routes.js";
-import {viewEngine} from "./src/config/viewEngine.js";
+import { viewEngine } from "./src/config/viewEngine.js";
 
 
 const app = express();
@@ -34,7 +34,16 @@ viewEngine(app);
 
 const Role = db.role;
 
-// db.sequelize.sync({ force: true }).then(() => {
+
+// xoa db va tao lai
+// db.sequelize.sync({ force: true }).then(() => { 
+//   console.log('Drop and Resync Db');
+//   initial();
+// });
+
+
+// khong xoa db
+// db.sequelize.sync({ force: false }).then(() => {
 //   console.log('Drop and Resync Db');
 //   initial();
 // });

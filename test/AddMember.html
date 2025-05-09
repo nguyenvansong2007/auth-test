@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autodesk Construction Cloud</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        /* Header styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+        
+        /* Subheader styles */
+        .subheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .account-admin {
+            display: flex;
+            align-items: center;
+        }
+        
+        .settings-icon {
+            background-color: #e6f7ff;
+            color: #0078d4;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        
+        .dropdown {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .dropdown::after {
+            content: "▼";
+            font-size: 10px;
+            margin-left: 5px;
+        }
+        
+        .email-dropdown {
+            display: flex;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-left: 20px;
+        }
+        
+        .trial-info {
+            color: #666;
+        }
+        
+        .buy-button {
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .user-icon {
+            background-color: #ff6b6b;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 15px 20px;
+            color: #0078d4;
+        }
+        
+        .breadcrumb a {
+            color: #0078d4;
+            text-decoration: none;
+        }
+        
+        /* Main content */
+        .main-content {
+            padding: 0 20px 20px;
+        }
+        
+        .page-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .form-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .info-icon {
+            margin-left: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid #999;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .email-input-container {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+        
+        .email-input {
+            flex: 1;
+            padding: 12px 15px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        
+        .enter-button {
+            padding: 12px 20px;
+            background-color: #f5f5f5;
+            border: none;
+            border-left: 1px solid #ccc;
+            color: #666;
+            cursor: pointer;
+        }
+        
+        .filter-button {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ccc;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        
+        /* Table styles */
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+        
+        .table th {
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            font-weight: normal;
+        }
+        
+        .table th .info-icon {
+            margin-left: 5px;
+        }
+        
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 0;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .folder-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #e6f7ff;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .empty-state-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .empty-state-text {
+            color: #666;
+        }
+        
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 20px;
+            border-top: 1px solid #ddd;
+            background-color: white;
+        }
+        
+        .cancel-button {
+            padding: 8px 15px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        
+        .add-button {
+            padding: 8px 15px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span style="margin-left: 5px;">AUTODESK Construction Cloud</span>
+        </div>
+    </div>
+    
+    <!-- Subheader -->
+    <div class="subheader">
+        <div style="display: flex; align-items: center;">
+            <div class="account-admin">
+                <div class="settings-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </div>
+                <span>Account Admin</span>
+                <div class="dropdown"></div>
+            </div>
+            
+            <div class="email-dropdown">
+                <span>songnnguyenvan2@gmail.com</span>
+                <div class="dropdown"></div>
+            </div>
+        </div>
+        
+        <div style="display: flex; align-items: center;">
+            <span class="trial-info">5 days remaining on your trial - Autodesk Docs</span>
+            <button class="buy-button">View buying options</button>
+            <div class="user-icon">SN</div>
+            <div class="dropdown"></div>
+        </div>
+    </div>
+    
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="#">Members</a> /
+    </div>
+    
+    <!-- Main content -->
+    <div class="main-content">
+        <h1 class="page-title">Add account members</h1>
+        
+        <div class="form-info">
+            Maximum 100 email addresses *
+            <div class="info-icon">i</div>
+        </div>
+        
+        <div class="email-input-container">
+            <input type="text" class="email-input" placeholder="person@company.com">
+            <button class="enter-button">Enter</button>
+        </div>
+        
+        <button class="filter-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+        </button>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width: 30px;"><input type="checkbox"></th>
+                    <th>Email*</th>
+                    <th>First Name <span class="info-icon">i</span></th>
+                    <th>Last Name <span class="info-icon">i</span></th>
+                    <th>Company</th>
+                    <th>Default Role <span class="info-icon">i</span></th>
+                    <th>Access Level</th>
+                </tr>
+            </thead>
+        </table>
+        
+        <div class="empty-state">
+            <div class="folder-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#99c2e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+            </div>
+            <h2 class="empty-state-title">You haven't added anyone yet</h2>
+            <p class="empty-state-text">Add emails and press Enter to populate the table.</p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <button class="cancel-button">Cancel</button>
+        <button class="add-button">Add</button>
+    </div>
+</body>
+</html>

@@ -15,10 +15,10 @@ export const register = async (req, res, next) => {
   try {
     const user = await User.create({
       username: req.body.username,
-      phonenumber: req.body.phonenumber,
-      firstname: req.body.firstname,
-      lastname: req.body.lastname,
-      company: req.body.company,
+      // phonenumber: req.body.phonenumber,
+      // firstname: req.body.firstname,
+      // lastname: req.body.lastname,
+      // company: req.body.company,
       email: req.body.email,
       password: bcrypt.hashSync(req.body.password, 8),
     })
@@ -84,10 +84,10 @@ export const login = (req, res) => {
         res.status(200).send({
           id: user.id,
           username: user.username,
-          phonenumber: user.phonenumber,
-          firstname: user.firstname,
-          lastname: user.lastname,
-          company: user.company,
+          // phonenumber: user.phonenumber,
+          // firstname: user.firstname,
+          // lastname: user.lastname,
+          // company: user.company,
           email: user.email,
           roles: authorities,
           accessToken: token,

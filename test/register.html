@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #fff;
+    }
+
+    .form-container {
+      max-width: 400px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .form-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .form-header h2 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .form-header img {
+      height: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .name-group input {
+      flex: 1;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px;
+      font-size: 14px;
+      margin: 8px 0;
+      border: 1px solid #aaa;
+      border-radius: 2px;
+    }
+
+    .checkbox {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .checkbox input {
+      margin-right: 5px;
+    }
+
+    .checkbox a {
+      color: #000;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      font-size: 16px;
+      background: #000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .signin-link {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .signin-link a {
+      color: #000;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 13px;
+      text-align: center;
+      color: #555;
+    }
+
+    .footer a {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <div class="form-header">
+      <h2>Create account</h2>
+      <img src="https://cdn.worldvectorlogo.com/logos/autodesk-2.svg" alt="Logo" />
+    </div>
+
+    <form>
+      <div class="name-group">
+        <input type="text" placeholder="First name" required>
+        <input type="text" placeholder="Last name" required>
+      </div>
+      <input type="email" placeholder="Email" required>
+      <input type="email" placeholder="Confirm email" required>
+      <input type="password" placeholder="Password" required>
+
+      <label class="checkbox">
+        <input type="checkbox" required />
+        I agree to the <a href="#">Autodesk Terms of Service</a> and the <a href="#">Autodesk Privacy Statement</a>.
+      </label>
+
+      <button type="submit">Create account</button>
+    </form>
+
+    <div class="signin-link">
+      Already have an account? <a href="#">Sign in</a>
+    </div>
+
+    <div class="footer">
+      Your account for everything Autodesk <br/>
+      <a href="#">Learn more</a>
+    </div>
+  </div>
+
+</body>
+</html>
