@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
+    "@speckle/viewer": "^2.24.0",
     "@tailwindcss/vite": "^4.1.5",
+    "antd": "^5.25.1",
     "axios": "^1.9.0",
     "fe": "file:",
     "jwt-decode": "^4.0.0",

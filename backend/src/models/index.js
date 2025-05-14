@@ -69,6 +69,8 @@ db.refreshToken.belongsTo(db.user, {
 // One-to-Many: User -> Project
 db.user.hasMany(db.project, { foreignKey: "createdBy" });
 db.project.belongsTo(db.user, { foreignKey: "createdBy", as: "userId" });
+db.project.hasMany(db.file, { foreignKey: "FileId", targetKey: "id" });
+db.file.belongsTo(db.project, { foreignKey: "projectId" });
 
 
 // Many-to-Many: User <-> Project through ProjectMembers
