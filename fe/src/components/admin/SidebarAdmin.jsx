@@ -1,29 +1,12 @@
-import {
-  Settings,
-  Users,
-  Building,
-  UserCheck,
-  FileText,
-  BookOpen,
-  Grid,
-  Package,
-  LinkIcon,
-  Link,
-} from "lucide-react";
+import { Settings, Users, Building, Grid, Package } from "lucide-react";
 
 const SidebarAdmin = ({ activeTab, onSidebarItemClick }) => {
   const tabs = [
-    { id: "dashboard", label: "Dashboard", icon: Grid },
-    { id: "members", label: "Members", icon: Users },
-    { id: "companies", label: "Companies", icon: Building },
-    { id: "roles", label: "Roles", icon: UserCheck },
-    { id: "templates", label: "Project templates", icon: Package },
-    { id: "library", label: "Lybrary", icon: BookOpen },
-    { id: "apps", label: "Apps", icon: Grid },
-    { id: "products", label: "Products and tools", icon: Package },
-    { id: "integrations", label: "Custom integrations", icon: LinkIcon },
-    { id: "settings", label: "Settings", icon: Settings },
-    { id: "bim360", label: "BIM 360 admin", icon: Settings },
+    { id: "dashboard", label: "Bảng điều khiển", icon: Grid },
+    { id: "members", label: "Quản lý tài khoản", icon: Users },
+    { id: "companies", label: "Quản lý công ty", icon: Building },
+    { id: "templates", label: "Mẫu  dự án", icon: Package },
+    { id: "settings", label: "Cài đặt", icon: Settings },
   ];
 
   return (

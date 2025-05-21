@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useEffect } from "react";
 import UserService from "../services/userService";
 import Sidebar from "../components/moderator/Sidebar";
@@ -34,10 +32,10 @@ const BoardModerator = () => {
       {/* Main content */}
       <div className="flex flex-1">
         {/* Sidebar */}
-        <Sidebar activeTab={activeTab} onTabChange={handleSidebarItemClick} />
+        <Sidebar activeTab={activeTab} onSidebarItemClick={handleSidebarItemClick} />
 
         {/* Main content */}
-        <main className="flex-1 overflow-auto">
+        <main className="flex-1 overflow-auto p-6">
           {activeTab === "dashboard" && <Dashboard />}
           {activeTab === "reports" && <Reports />}
           {activeTab === "Approvals" && <Approvals />}

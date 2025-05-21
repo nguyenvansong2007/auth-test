@@ -10,11 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.0.1",
-    "@speckle/viewer": "^2.24.0",
+    "@speckle/viewer": "^2.24.2",
     "@tailwindcss/vite": "^4.1.5",
     "antd": "^5.25.1",
     "axios": "^1.9.0",
+    "date-fns": "^4.1.0",
     "fe": "file:",
     "jwt-decode": "^4.0.0",
     "lucide-react": "^0.508.0",
@@ -23,6 +23,7 @@
     "react-hook-form": "^7.56.3",
     "react-router-dom": "^7.5.3",
     "react-toastify": "^11.0.5",
+    "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.5",
     "yup": "^1.6.1"
   },
@@ -35,6 +36,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "typescript": "^5.8.3",
     "vite": "^6.3.5"
   }
 }

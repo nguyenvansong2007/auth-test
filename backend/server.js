@@ -42,11 +42,8 @@ const Role = db.role;
 // });
 
 
-// khong xoa db
-// db.sequelize.sync({ force: false }).then(() => {
-//   console.log('Drop and Resync Db');
-//   initial();
-// });
+// initial();
+
 
 db.sequelize.sync()
 

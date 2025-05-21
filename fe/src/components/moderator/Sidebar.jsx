@@ -1,20 +1,11 @@
-import React from "react";
-import {
-  Settings,
-  Users,
-  AlertCircle,
-  FileCheck,
-  Shield,
-  Home,
-} from "lucide-react";
+import { Settings, Users, FileCheck, Home } from "lucide-react";
 
-const Sidebar = ({ activeTab, onTabChange }) => {
+const Sidebar = ({ activeTab, onSidebarItemClick }) => {
   const tabs = [
-    { id: "dashboard", label: "Dashboard", icon: Home },
-    { id: "reports", label: "Reports", icon: AlertCircle },
-    { id: "approvals", label: "Approvals", icon: FileCheck },
-    { id: "users", label: "Users Management", icon: Users },
-    { id: "settings", label: "Settings", icon: Settings },
+    { id: "dashboard", label: "Bảng điều khiển", icon: Home },
+    { id: "approvals", label: "Phê duyệt", icon: FileCheck },
+    { id: "users", label: "Quản lý thành viên", icon: Users },
+    { id: "settings", label: "Cài đặt", icon: Settings },
   ];
 
   return (
@@ -26,7 +17,7 @@ const Sidebar = ({ activeTab, onTabChange }) => {
             return (
               <div
                 key={tab.id}
-                onClick={() => onTabChange(tab.id)}
+                onClick={() => onSidebarItemClick(tab.id)}
                 className={`flex items-center cursor-pointer ${
                   activeTab === tab.id
                     ? "text-blue-600 font-medium"

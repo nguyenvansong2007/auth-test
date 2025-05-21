@@ -19,8 +19,8 @@ export const catchError = (err, res) => {
 
 
 export const verifyToken = async (req, res, next) => {
-  let token = req.headers["authorization"];
-  // let token = req.headers["x-access-token"];
+  // let token = req.headers["authorization"];
+  let token = req.headers["x-access-token"];
 
 
   if (!token) {

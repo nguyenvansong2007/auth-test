@@ -12,14 +12,13 @@ import {
 
 const Sidebar = ({ activeTab, onTabChange }) => {
   const tabs = [
-    { id: "home", label: "Home", icon: Home },
-    { id: "projects", label: "Projects", icon: Grid },
-    { id: "calendar", label: "Calendar", icon: Calendar },
-    { id: "documents", label: "Documents", icon: FileText },
-    { id: "team", label: "Team", icon: Users },
-    { id: "companies", label: "Companies", icon: Building },
-    { id: "library", label: "Library", icon: BookOpen },
-    { id: "settings", label: "Settings", icon: Settings },
+    // { id: "home", label: "Home", icon: Home },
+    { id: "projects", label: "Dự án", icon: Grid },
+    { id: "calendar", label: "Lịch", icon: Calendar },
+    { id: "documents", label: "Tài liệu", icon: FileText },
+    { id: "team", label: "Đội nhóm", icon: Users },
+    { id: "companies", label: "Công ty", icon: Building },
+    { id: "settings", label: "Cài đặt", icon: Settings },
   ];
 
   return (

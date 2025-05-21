@@ -45,7 +45,7 @@ const getProjectMembers = (projectId) => {
   return axios.get(API_URL + projectId + "/getAllMember", { headers: authHeader() });
 };
 
-export default {
+const projectService = {
   // Project CRUD
   getAllProjects,
   createProject,
@@ -60,3 +60,5 @@ export default {
   removeProjectMember,
   getProjectMembers,
 };
+
+export default projectService;

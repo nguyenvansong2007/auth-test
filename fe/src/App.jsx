@@ -10,7 +10,6 @@ import BoardModerator from "./pages/BoardModerator";
 import BoardAdmin from "./pages/BoardAdmin";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/footer/Footer";
-// import UserManagement from "./components/admin/UserManagement";
 const App = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
@@ -28,7 +27,6 @@ const App = () => {
           <Route path="/user" element={<BoardUser />} />
           <Route path="/mod" element={<BoardModerator />} />
           <Route path="/admin" element={<BoardAdmin />} />
-          {/* <Route path="/usermanagement" element={<UserManagement/>} /> */}
         </Routes>
       </div>
 

@@ -1,11 +1,9 @@
-"use client";
-
 import { useState, useEffect } from "react";
-import { Plus } from "lucide-react";
+// import { Plus } from "lucide-react";
 import UserService from "../services/userService";
 import Sidebar from "../components/user/Sidebar";
 import MobileNav from "../components/user/MobileNav";
-import Projects from "../components/user/Projects";
+import Projects from "../components/projects/Projects";
 import Calendar from "../components/user/Calendar";
 import Documents from "../components/user/Documents";
 import Team from "../components/user/Team";
@@ -14,7 +12,7 @@ import Library from "../components/user/Library";
 import Settings from "../components/user/Settings";
 const BoardUser = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState("home");
+  const [activeTab, setActiveTab] = useState("projects");
 
   const handleSidebarItemClick = (item) => {
     setActiveTab(item);

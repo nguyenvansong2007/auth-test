@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
 import userService from "../../services/userService";
-import { Table, Button, Modal, Form, Input, message, Space } from "antd";
+import {
+  Table,
+  Button,
+  Modal,
+  Form,
+  Select,
+  Input,
+  message,
+  Space,
+} from "antd";
 import { Plus, Pencil, Trash2 } from "lucide-react";
 
 const MembersContent = () => {
@@ -9,6 +18,7 @@ const MembersContent = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [form] = Form.useForm();
   const [editingId, setEditingId] = useState(null);
+  const roleOptions = ["admin", "moderator", "user"];
 
   const fetchUsers = async () => {
     try {
@@ -79,6 +89,16 @@ const MembersContent = () => {
       className: "text-gray-700",
     },
     {
+      title: "Roles",
+      dataIndex: "roles",
+      key: "roles",
+      // render: (roles) => roles.join(", ") || "-",
+      render: (roles) =>
+        Array.isArray(roles)
+          ? roles.map((role) => role.name).join(", ")
+          : "-",
+    },
+    {
       title: "Actions",
       key: "actions",
       className: "text-gray-700",
@@ -110,6 +130,7 @@ const MembersContent = () => {
   ];
 
   return (
+    
     <div className="p-6">
       <div className="mb-4">
         <Button
@@ -180,6 +201,22 @@ const MembersContent = () => {
               <Input.Password className="rounded-md" />
             </Form.Item>
           )}
+          <Form.Item
+            name="roles"
+            label="Roles"
+            rules={[
+              { required: true, message: "Please select at least one role!" },
+            ]}
+            className="mb-4"
+          >
+            <Select
+              mode="tags"
+              options={roleOptions.map((role) => ({
+                value: role,
+                label: role,
+              }))}
+            />
+          </Form.Item>
           <Form.Item>
             <Button
               type="primary"

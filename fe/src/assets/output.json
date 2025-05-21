@@ -1,0 +1,4225 @@
+[
+    {
+        "RevitData": {
+            "ProjectInfo": {
+                "Name": "NHÀ Ở 1 TẦNG",
+                "Number": "2024.0002",
+                "Account": "Không tìm thấy",
+                "ProjectType": "Không tìm thấy",
+                "Template": "Không tìm thấy",
+                "Address": "THẠCH MỸ, LỘC HÀ, HÀ TĨNH",
+                "TimeZone": "Không tìm thấy",
+                "StartDate": "Không tìm thấy",
+                "EndDate": "Không tìm thấy",
+                "ProjectValue": "Không tìm thấy"
+            },
+            "FileInfo": {
+                "FileName": "Nha Anh Son Ha Tinh 2024.rvt",
+                "Title": "Nha Anh Son Ha Tinh 2024"
+            },
+            "Model": {
+                "TotalElements": 19261,
+                "Walls": 62,
+                "Doors": 7
+            },
+            "Levels": [
+                {
+                    "Name": "MÓNG",
+                    "Elevation": -5.577427821522309
+                },
+                {
+                    "Name": "SÂN",
+                    "Elevation": -2.526246719160105
+                },
+                {
+                    "Name": "TẦNG 1",
+                    "Elevation": 0.0
+                },
+                {
+                    "Name": "MÁI",
+                    "Elevation": 13.451443569553803
+                },
+                {
+                    "Name": "ĐỈNH MÁI",
+                    "Elevation": 24.03215223097094
+                }
+            ],
+            "Sheets": [
+                {
+                    "SheetNumber": "S-005",
+                    "Name": "MẶT BẰNG KẾT CẤU MÓNG"
+                },
+                {
+                    "SheetNumber": "S-015",
+                    "Name": "CHI TIẾT MÓNG M2"
+                },
+                {
+                    "SheetNumber": "S-004",
+                    "Name": "MẶT BẰNG ĐỊNH VỊ CỘT"
+                },
+                {
+                    "SheetNumber": "S-007",
+                    "Name": "MẶT BẰNG KẾT CẤU GIẰNG MÓNG"
+                },
+                {
+                    "SheetNumber": "S-009",
+                    "Name": "MẶT BẰNG BỐ TRÍ DẦM SÀN MÁI"
+                },
+                {
+                    "SheetNumber": "A.01.001",
+                    "Name": "DANH MỤC BẢN VẼ"
+                },
+                {
+                    "SheetNumber": "S-014",
+                    "Name": "CHI TIẾT MÓNG M1"
+                },
+                {
+                    "SheetNumber": "S-020",
+                    "Name": "CHI TIẾT GM-X-1, GM-X-2"
+                },
+                {
+                    "SheetNumber": "ZA.00.001",
+                    "Name": "BÌA NGOÀI"
+                },
+                {
+                    "SheetNumber": "ZA.00.002",
+                    "Name": "BÌA KÝ"
+                },
+                {
+                    "SheetNumber": "ZA.00.003",
+                    "Name": "PHỐI CẢNH TỔNG THỂ CÔNG TRÌNH"
+                },
+                {
+                    "SheetNumber": "S-001",
+                    "Name": "DANH MỤC BẢN VẼ KẾT CẤU"
+                },
+                {
+                    "SheetNumber": "ZA.00.004",
+                    "Name": "PHỐI CẢNH 02"
+                },
+                {
+                    "SheetNumber": "ZA.00.005",
+                    "Name": "PHỐI CẢNH MẶT CẮT"
+                },
+                {
+                    "SheetNumber": "A.01.002",
+                    "Name": "MẶT BẰNG TỔNG THỂ TẦNG 1"
+                },
+                {
+                    "SheetNumber": "A.01.003",
+                    "Name": "MẶT BẰNG TỔNG THỂ MÁI"
+                },
+                {
+                    "SheetNumber": "A.01.005",
+                    "Name": "DANH MỤC VẬT LIỆU"
+                },
+                {
+                    "SheetNumber": "A.01.006",
+                    "Name": "CẤU TẠO CHUNG"
+                },
+                {
+                    "SheetNumber": "S-002",
+                    "Name": "GHI CHÚ CHUNG"
+                },
+                {
+                    "SheetNumber": "S-024",
+                    "Name": "CHI TIẾT GM-Y-1"
+                },
+                {
+                    "SheetNumber": "A.01.004",
+                    "Name": "GHI CHÚ CHUNG"
+                },
+                {
+                    "SheetNumber": "A.02.001",
+                    "Name": "MẶT BẰNG NỘI THẤT"
+                },
+                {
+                    "SheetNumber": "A.02.003",
+                    "Name": "MẶT BẰNG TƯỜNG XÂY TẦNG 1"
+                },
+                {
+                    "SheetNumber": "A.02.004",
+                    "Name": "MẶT BẰNG TƯỜNG XÂY TẦNG MÁI"
+                },
+                {
+                    "SheetNumber": "A.02.006",
+                    "Name": "MẶT BẰNG LÁT SÀN"
+                },
+                {
+                    "SheetNumber": "A.02.005",
+                    "Name": "MẶT BẰNG TRẦN"
+                },
+                {
+                    "SheetNumber": "A.02.007",
+                    "Name": "MẶT BẰNG CỬA TẦNG 1"
+                },
+                {
+                    "SheetNumber": "A.03.001",
+                    "Name": "MẶT ĐỨNG X1-X5"
+                },
+                {
+                    "SheetNumber": "A.03.003",
+                    "Name": "MẶT ĐỨNG Y1-Y4"
+                },
+                {
+                    "SheetNumber": "A.04.001",
+                    "Name": "MẶT CẮT 1-1"
+                },
+                {
+                    "SheetNumber": "A.04.002",
+                    "Name": "MẶT CẮT 2-2"
+                },
+                {
+                    "SheetNumber": "S-045",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-046",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-047",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-034",
+                    "Name": "CHI TIẾT DM-Y-2"
+                },
+                {
+                    "SheetNumber": "S-027",
+                    "Name": "CHI TIẾT DM-X-1, DM-X-2"
+                },
+                {
+                    "SheetNumber": "S-025",
+                    "Name": "CHI TIẾT GM-Y-2, GM-Y-3"
+                },
+                {
+                    "SheetNumber": "S-036",
+                    "Name": "CHI TIẾT DM-Y-4"
+                },
+                {
+                    "SheetNumber": "S-028",
+                    "Name": "CHI TIẾT DM-X-3"
+                },
+                {
+                    "SheetNumber": "S-029",
+                    "Name": "CHI TIẾT DM-X-4"
+                },
+                {
+                    "SheetNumber": "S-030",
+                    "Name": "CHI TIẾT DM-X-5"
+                },
+                {
+                    "SheetNumber": "S-031",
+                    "Name": "CHI TIẾT DM-X-6"
+                },
+                {
+                    "SheetNumber": "S-037",
+                    "Name": "CHI TIẾT DM-Y-6"
+                },
+                {
+                    "SheetNumber": "S-039",
+                    "Name": "CHI TIẾT DM-Y-9"
+                },
+                {
+                    "SheetNumber": "S-021",
+                    "Name": "CHI TIẾT GM-X-3, GM-X-4"
+                },
+                {
+                    "SheetNumber": "S-022",
+                    "Name": "CHI TIẾT GM-X-5, GM-X-6"
+                },
+                {
+                    "SheetNumber": "S-023",
+                    "Name": "CHI TIẾT GM-X-7, GM-X-8, GM-X-9, GM-X-10"
+                },
+                {
+                    "SheetNumber": "S-026",
+                    "Name": "CHI TIẾT GM-Y-4, GM-Y-5, GM-Y-6"
+                },
+                {
+                    "SheetNumber": "S-035",
+                    "Name": "CHI TIẾT DM-Y-3, DM-Y-5"
+                },
+                {
+                    "SheetNumber": "A.02.008",
+                    "Name": "MẶT BẰNG CỬA TẦNG MÁI"
+                },
+                {
+                    "SheetNumber": "A.03.002",
+                    "Name": "MẶT ĐỨNG X5-X1"
+                },
+                {
+                    "SheetNumber": "A.03.004",
+                    "Name": "MẶT ĐỨNG Y4-Y1"
+                },
+                {
+                    "SheetNumber": "A.04.003",
+                    "Name": "MẶT CẮT 3-3"
+                },
+                {
+                    "SheetNumber": "A.04.004",
+                    "Name": "MẶT CẮT 4-4"
+                },
+                {
+                    "SheetNumber": "A.05.001",
+                    "Name": "CHI TIẾT WC CHUNG"
+                },
+                {
+                    "SheetNumber": "A.05.002",
+                    "Name": "CHI TIẾT WC PN MASTER"
+                },
+                {
+                    "SheetNumber": "A.05.003",
+                    "Name": "PHỐI CẢNH WC"
+                },
+                {
+                    "SheetNumber": "S-033",
+                    "Name": "CHI TIẾT DM-X-10, DM-Y-1"
+                },
+                {
+                    "SheetNumber": "A.06.001",
+                    "Name": "CHI TIẾT TAM CẤP SẢNH CHÍNH"
+                },
+                {
+                    "SheetNumber": "A.06.002",
+                    "Name": "CHI TIẾT TAM CẤP SẢNH PHỤ"
+                },
+                {
+                    "SheetNumber": "A.06.003",
+                    "Name": "CHI TIẾT CỘT SẢNH"
+                },
+                {
+                    "SheetNumber": "A.06.004",
+                    "Name": "CHI TIẾT CỘT GÓC"
+                },
+                {
+                    "SheetNumber": "A.06.005",
+                    "Name": "CHI TIẾT CỘT ÁP TƯỜNG"
+                },
+                {
+                    "SheetNumber": "S-011",
+                    "Name": "MẶT BẰNG BỐ THÍ THÉP SÀN MÁI LỚP DƯỚI"
+                },
+                {
+                    "SheetNumber": "S-012",
+                    "Name": "MẶT BẰNG BỐ TRÍ THÉP SÀN MÁI LỚP TRÊN"
+                },
+                {
+                    "SheetNumber": "S-042",
+                    "Name": "CHI TIẾT LANH TÔ CỬA LT-X-1, LT-X-2, LT-X-4"
+                },
+                {
+                    "SheetNumber": "S-006",
+                    "Name": "KẾT CẤU  MÓNG, KÈ ĐÁ CHÂN TƯỜNG"
+                },
+                {
+                    "SheetNumber": "S-008",
+                    "Name": "MẶT BẰNG LANH TÔ, SÀN PHỤ TẠI SẢNH CHÍNH"
+                },
+                {
+                    "SheetNumber": "S-017",
+                    "Name": "CHI TIẾT CỘT C1"
+                },
+                {
+                    "SheetNumber": "S-018",
+                    "Name": "CHI TIẾT CỘT C2"
+                },
+                {
+                    "SheetNumber": "S-041",
+                    "Name": "CHI TIẾT TIẾT SÀN PHỤ SẢNH CHÍNH, LANH TÔ CỬA CHÍNH"
+                },
+                {
+                    "SheetNumber": "S-016",
+                    "Name": "CHI TIẾT MÓNG M3"
+                },
+                {
+                    "SheetNumber": "S-019",
+                    "Name": "CHI TIẾT CỘT C3"
+                },
+                {
+                    "SheetNumber": "S-032",
+                    "Name": "CHI TIẾT DM-X-7, DM-X-8, DM-X-9"
+                },
+                {
+                    "SheetNumber": "S-013",
+                    "Name": "THÉP SÀN MÁI PHỤ NHÀ VỆ SINH"
+                },
+                {
+                    "SheetNumber": "S-048",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-049",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-050",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-051",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-052",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-053",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-054",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-055",
+                    "Name": "THỐNG KÊ CỐT THÉP"
+                },
+                {
+                    "SheetNumber": "S-043",
+                    "Name": "CHI TIẾT LANH TÔ CỬA LT-X-5, LT-X-6, LT-X-7, LT-X-8, LT-X-9, LT-X-10"
+                },
+                {
+                    "SheetNumber": "S-044",
+                    "Name": "CHI TIẾT LANH TÔ CỬA LT-Y-1 ĐẾN LT-Y-9"
+                },
+                {
+                    "SheetNumber": "S-038",
+                    "Name": "CHI TIẾT DM-Y-7, DM-Y-8"
+                },
+                {
+                    "SheetNumber": "S-056",
+                    "Name": "THỐNG KÊ CỐT THÉP XÀ GỒ THÉP LỢP MÁI"
+                },
+                {
+                    "SheetNumber": "S-003",
+                    "Name": "GHI CHÚ CHUNG"
+                },
+                {
+                    "SheetNumber": "S-010",
+                    "Name": "THỐNG KÊ CẤU KIỆN BÊ TÔNG DẦM SÀN TẦNG 1"
+                },
+                {
+                    "SheetNumber": "S-040",
+                    "Name": "MẶT CẮT SÀN MÁI"
+                },
+                {
+                    "SheetNumber": "S-057",
+                    "Name": "CHI TIẾT GM-Y-1 Copy 1"
+                },
+                {
+                    "SheetNumber": "S-058",
+                    "Name": "CHI TIẾT GM-Y-1 Copy 2"
+                },
+                {
+                    "SheetNumber": "S-059",
+                    "Name": "LT-Y-10"
+                }
+            ],
+            "Views": [
+                {
+                    "Name": "L1 - Architectural",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L1 - Architectural",
+                    "Type": "CeilingPlan"
+                },
+                {
+                    "Name": "Project View",
+                    "Type": "ProjectBrowser"
+                },
+                {
+                    "Name": "L2 - Architectural",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L2 - Architectural",
+                    "Type": "CeilingPlan"
+                },
+                {
+                    "Name": "North - Architectural",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "South - Architectural",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "Site",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "System Browser",
+                    "Type": "SystemBrowser"
+                },
+                {
+                    "Name": "Cover Sheet View",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "Text and Dimensions",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "THỐNG KÊ CỬA ĐI",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Room Finish Schedule",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Window Schedule",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Symbols",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "Working_View List",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Working_Sheet List",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Sheet Index",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "L1 - Mechanical",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L2 - Mechanical",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L1 - Power",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L2 - Power",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L1 - Plumbing",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L2 - Plumbing",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "Space Outdoor Air Schedule",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Electrical Analytical Bus Schedule",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Electrical Analytical Load Schedule",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "L1 - Lighting",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L2 - Lighting",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L1 - Mechanical",
+                    "Type": "CeilingPlan"
+                },
+                {
+                    "Name": "L2 - Mechanical",
+                    "Type": "CeilingPlan"
+                },
+                {
+                    "Name": "L1 - Lighting",
+                    "Type": "CeilingPlan"
+                },
+                {
+                    "Name": "L2 - Lighting",
+                    "Type": "CeilingPlan"
+                },
+                {
+                    "Name": "L1 - Working",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L2 - Working",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "MẶT CẮT 2-2",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "Level Schedule",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Structural Foundation Schedule",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Structural Column Schedule",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Structural Framing Schedule",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "Structural Wall Schedule",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "L1 - Structural",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "L2 - Structural",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "SÂN",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "ĐỈNH MÁI",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "3D KẾT CẤU KHUNG - NAM",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "MẶT BẰNG KẾT CẤU MÓNG",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "S1. GHI CHÚ",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "CHI TIẾT MÓNG M2",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG ĐỊNH VỊ CỘT",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "MẶT BẰNG ĐỊNH VỊ CỘT",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG KẾT CẤU GIẰNG MÓNG",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "{3D - hai.lt}",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "L1 - MẶT BẰNG BỐ TRÍ NỘI THẤT",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "MẶT BẰNG GIẰNG MÓNG",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "MÓNG",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "MÓNG",
+                    "Type": "CeilingPlan"
+                },
+                {
+                    "Name": "MÓNG",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "MẶT BẰNG KẾT CẤU DẦM SÀN MÁI",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "{3D - HLC2023}",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "MẶT BẰNG MÁI",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "MẶT BẰNG TƯỜNG XÂY TẦNG 1",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "L1 - MẶT BẰNG LÁT SÀN",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "MẶT BẰNG TỔNG THỂ MÁI",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "3D M2",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "MẶT BẰNG KẾT CẤU MÓNG",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "CHI TIẾT CỔ CỘT",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "THỐNG KÊ CỔ CỘT",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP MÓNG M2",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ GIẰNG MÓNG",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "CHI TIẾT MÓNG M2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG BỐ TRÍ DẦM SÀN MÁI",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "L2 - Structural Copy 1",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "S3. GHI CHÚ SÀN ÂM",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "S2. GHI CHÚ MB KẾT CẤU DẦM SÀN",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "MẶT CẮT 4-4",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "MẶT CẮT 3-3",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "MẶT BẰNG  ĐỊNH VỊ CÔNG TRÌNH",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "DANH MỤC BẢN VẼ",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "A. GHI CHÚ CHUNG",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "A. BẢNG GHI CHÚ VẬT LIỆU",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "A. GHI CHÚ CẤU TẠO SÀN",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "A. GHI CHÚ CẤU TẠO TƯỜNG",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "A. GHI CHÚ LÁT SÀN",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "A.SPEC",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "A. GHI CHÚ VẬT LIỆU",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "Thống kê cửa sổ",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ TƯỜNG GẠCH",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG MÓNG",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG DẦM MÁI",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "CHI TIẾT MÓNG M1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT MÓNG M1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT CẮT MÓNG M1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "3D M1",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP MÓNG M1",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-1, GM-X-2",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-1-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "BÌA NGOÀI",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "BÌA KÝ",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "PHỐI CẢNH TỔNG THỂ CÔNG TRÌNH",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "DANH MỤC BẢN VẼ KẾT CẤU",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "PHỐI CẢNH 02",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "PHỐI CẢNH MẶT CẮT",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "PHỐI CẢNH MẶT CẮT",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-2-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-1",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "GM-X-2-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-2",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-3-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-3",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "MẶT BẰNG TỔNG THỂ TẦNG 1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG TỔNG THỂ MÁI",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "DANH MỤC VẬT LIỆU",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CẤU TẠO CHUNG",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-4-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-5",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-5-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-6",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-6-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG KẾT CẤU DẦM SÀN MÁI + NAM",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "CHI TIẾT DẦM DM-X-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-1-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GHI CHÚ CHUNG",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "GM-Y-1-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-1-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-1-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-1-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GHI CHÚ CHUNG",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG NỘI THẤT",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG TƯỜNG XÂY TẦNG 1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG TƯỜNG XÂY TẦNG MÁI",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG LÁT SÀN",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG TRẦN",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG CỬA TẦNG 1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT ĐỨNG X1-X5",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT ĐỨNG Y1-Y4",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT CẮT 1-1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT CẮT 2-2",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "GM-Y-1-5",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG TƯỜNG XÂY MÁI",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-2-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-3-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-4-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "A. GHI CHÚ TƯỜNG",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-2",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "DM-Y-2-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-2-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-2-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG KẾT CẤU DẦM SÀN MÁI + HÙNG",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "CHI TIẾT DẦM DM-X-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT CẮT 1-1",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-1, DM-X-2",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "DM-X-2-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-2-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG GIẰNG MÓNG Copy 1 Copy 1",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-2, GM-Y-3",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "DM-Y-2-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-2-5",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-2-6",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-2-7",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-2",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "3D KẾT CẤU KHUNG - HÙNG",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-4",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-3",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "DM-Y-4-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-4-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-4-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-4-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-4-5",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-4-6",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-6",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-3-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-3-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-3-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-3-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-4-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-4-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-4-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-4",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-5",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-5",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-5-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-6",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "DM-X-5-6",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG TRẦN",
+                    "Type": "CeilingPlan"
+                },
+                {
+                    "Name": "DM-X-5-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-5-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-5-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-5-5",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-9",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-6-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-6",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "DM-Y-6-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-6-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-6-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-9-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-9",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "DM-Y-9-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-9-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-6",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-4-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-3-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-3, GM-X-4",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-10",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-10-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-10-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-5, GM-X-6",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "GM-X-5-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-6-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-7, GM-X-8, GM-X-9, GM-X-10",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "GM-Y-2-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-3-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-4, GM-Y-5, GM-Y-6",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "KHỐI LƯỢNG TRẦN THẠCH CAO",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "KHỐI LƯỢNG GẠCH LÁT",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-5",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-5-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-5-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-3, DM-Y-5",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT ĐỨNG TRỤC Y4-Y1",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT ĐỨNG TRỤC Y1-Y4",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT ĐỨNG TRỤC X5-X1",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT ĐỨNG TRỤC X1-X5",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT BẰNG CỬA TẦNG 1",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "MẶT BẰNG CỬA TẦNG MÁI",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG CỬA TẦNG MÁI",
+                    "Type": "FloorPlan"
+                },
+                {
+                    "Name": "MẶT ĐỨNG X5-X1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT ĐỨNG Y4-Y1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ VÁCH CỬA SỔ",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "MẶT BẰNG WC CHUNG",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG WC PN MASTER",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG CỘT SẢNH",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG CỘT GÓC",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG CỘT ÁP TƯỜNG",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG TAM CẤP SẢNH CHÍNH",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT CẮT 3-3",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT CẮT 4-4",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT ĐỨNG 1-A",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT ĐỨNG 1-B",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT ĐỨNG 1-C",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT ĐỨNG 1-D",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT ĐỨNG 2-A",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT ĐỨNG 2-B",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT ĐỨNG 2-C",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "MẶT ĐỨNG 2-D",
+                    "Type": "Elevation"
+                },
+                {
+                    "Name": "PHỐI CẢNH WC CHUNG",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "PHỐI CẢNH WC PHÒNG NGỦ MASTER",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "PHỐI CẢNH KHU WC",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "DANH MỤC BẢN VẼ KIẾN TRÚC",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "CHI TIẾT WC CHUNG",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT WC PN MASTER",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "PHỐI CẢNH WC",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT XÂY TƯỜNG MÓNG",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-6-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-6-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-6-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-10, DM-Y-1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "DANH MỤC BẢN VẼ KẾT CẤU",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "CHI TIẾT TAM CẤP SẢNH CHÍNH",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT TAM CẤP SẢNH PHỤ",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "PHỐI CẢNH TAM CẤP SẢNH CHÍNH",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "MẶT CẮT TAM CẤP SẢNH CHÍNH",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT CỘT SẢNH",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG TAM CẤP SẢNH PHỤ",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "PHỐI CẢNH TAM CẤP SẢNH PHỤ",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "MẶT CẮT TAM CẤP SẢNH PHỤ",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT ĐỨNG CỘT SẢNH",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "PHỐI CẢNH  CỘT SẢNH",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "MẶT CẮT CỘT SẢNH",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT CỘT GÓC",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT ĐỨNG CỘT GÓC 01",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT ĐỨNG CỘT GÓC 02",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT ĐỨNG CỘT ÁP TƯỜNG",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "PHỐI CẢNH  CỘT GÓC",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "CHI TIẾT CỘT ÁP TƯỜNG",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "PHỐI CẢNH  CỘT ÁP TƯỜNG",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "Chi tiết 01",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "Chi tiết 03",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "Chi tiết 05",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "Chi tiết 02",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "Chi tiết 04",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "Gạch chân móng, trên cửa, sơn đỏ",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "MẶT CẮT BÊN CỘT GÓC",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT CẮT CỘT ÁP TƯỜNG",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG BỐ THÍ THÉP SÀN MÁI LỚP DƯỚI",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG BỐ TRÍ THÉP SÀN MÁI LỚP TRÊN",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT LANH TÔ CỬA LT-X-1, LT-X-2, LT-X-4",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "KẾT CẤU  MÓNG, KÈ ĐÁ CHÂN TƯỜNG",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG LANH TÔ CỬA",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "3D LANH TÔ, MÁI PHỤ SẢNH CHÍNH",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "MẶT BẰNG LANH TÔ, SÀN PHỤ TẠI SẢNH CHÍNH",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT CẮT MÓNG M2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "3D KẾT CẤU  MÓNG, KÈ ĐÁ CHÂN TƯỜNG",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "THỐNG KÊ KÈ ĐÁ CHÂN TƯỜNG",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "MẶT BẰNG XÂY TƯỜNG GẠCH CHÂN MÓNG",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-7",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-7-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-8",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-8-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-9",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-9-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-X-10",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-X-10-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-5",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-5-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-6",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-6-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT CỘT C1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "C1-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT CỘT C1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "3D C1",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "CHI TIẾT CỘT C2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "C2-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "3D C2",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "CHI TIẾT CỘT C2",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "S-P-1-X",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT TIẾT SÀN PHỤ SẢNH CHÍNH, LANH TÔ CỬA CHÍNH",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG MÓNG M3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-X-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-X-1-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "M3-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT MÓNG M3",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "3D M3",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "CHI TIẾT LT-X-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-X-2-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-Y-7",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-Y-7-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-Y-8",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-Y-8-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-Y-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-Y-1-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-Y-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-Y-2-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-Y-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-Y-3-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-Y-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-Y-4-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-Y-5",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-Y-5-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-Y-6",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-Y-6-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-Y-9",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-Y-9-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG LANH TÔ CỬA Copy 1",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "CHI TIẾT LT-X-4",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-X-4-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-X-5",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-X-5-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-X-6",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-X-6-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-X-7",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-X-7-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "THÉP SÀN SẢNH PHỤ LỚP TRÊN",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-X-8",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-X-8-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT LT-X-9",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-X-9-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-X-9-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-9",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-9-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-7",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-7-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "THÉP SÀN SẢNH PHỤ LỚP DƯỚI",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "MẶT BẰNG BỐ TRÍ THÉP SÀN MÁI LỚP DƯỚI",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "MẶT BẰNG BỐ TRÍ THÉP SÀN MÁI LỚP TRÊN",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "CHI TIẾT CỘT C3",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT CỘT C3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "C3-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "3D C3",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-7, DM-X-8, DM-X-9",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP MÓNG M3",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "CHI TIẾT DM-X-8-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-X-8-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-1-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-1-2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-7",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "THÉP SÀN MÁI PHỤ NHÀ VỆ SINH",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT BẰNG THÉP SÀN MÁI PHỤ NHÀ VỆ SINH LỚP DƯỚI",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-7-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-8",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-8-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "S-P-2-1",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "MẶT BẰNG THÉP SÀN MÁI PHỤ NHÀ VỆ SINH LỚP TRÊN",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-3",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "DM-Y-3-1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-4",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-5",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-6",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "MẶT BẰNG GIẰNG MÓNG Copy 3",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-7",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-8",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-9",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-10",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-1",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-2",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-3",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-4",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-5",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-6",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-1",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP C1",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP C3",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP C2",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-1",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-2",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-3",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-4",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-5",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-6",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-7",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-8",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-9",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-10",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-1",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-3",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "S3. GHI CHÚ SÀN PHỤ",
+                    "Type": "Legend"
+                },
+                {
+                    "Name": "MẶT BẰNG LANH TÔ CỬA Copy 2",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-4",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-5",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-6",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-7",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-8",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-9",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-2",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-4",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-5",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-6",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-7",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-8",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-9",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-1",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-2",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-3",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-4",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-5",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-6",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-7",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-8",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-9",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP SÀN PHỤ SẢNH CHÍNH",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP SÀN PHỤ MÁI NHÀ VỆ SINH",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP SÀN MÁI",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG CỔ CỘT",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "CHI TIẾT LANH TÔ CỬA LT-X-5, LT-X-6, LT-X-7, LT-X-8, LT-X-9, LT-X-10",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT LANH TÔ CỬA LT-Y-1 ĐẾN LT-Y-9",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "3D KẾT CẤU MÁI",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "CHI TIẾT DM-Y-7, DM-Y-8",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP XÀ GỒ THÉP LỢP MÁI",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ XÀ GỒ LỢP MÁI",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "GHI CHÚ CHUNG",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ MÁI LỢP",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP SÀN PHỤ SẢNH CHÍNH Copy 1",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG CỘT",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG LANH TÔ",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG SÀN MÁI",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG SÀN PHỤ SẢNH VÀ NHÀ VS",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG GIẰNG MÓNG",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CẤU KIỆN BÊ TÔNG DẦM SÀN TẦNG 1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "3D KẾT CẤU",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "MẶT CẮT 1-1 SÀN MÁI",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "MẶT CẮT SÀN MÁI",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "MẶT CẮT 2-2 SÀN MÁI",
+                    "Type": "Section"
+                },
+                {
+                    "Name": "V1",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "{3D - Nam}",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-1 Copy 1",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-1 DETAL",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-1-2 Copy 1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-1-1 Copy 1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-1-3 Copy 1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-1-4 Copy 1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "GM-Y-1-5 Copy 1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "CHI TIẾT GM-Y-1 Copy 2",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-1 Copy 1",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "{3D - xuanhung360} Copy 1",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "MẶT BẰNG KẾT CẤU DẦM SÀN MÁI + HÙNG Copy 1",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "3D KẾT CẤU KHUNG - NAM Copy 1",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "MẶT BẰNG KẾT CẤU VÌ KÈO THÉP",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "MẶT BẰNG KẾT CẤU DẦM SÀN MÁI Copy 2",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "MẶT BẰNG KẾT CẤU DẦM SÀN MÁI Copy 3",
+                    "Type": "EngineeringPlan"
+                },
+                {
+                    "Name": "3D LT-Y-10",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "CHI TIẾT DẦM LT-Y-10",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "Detail 1",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "LT-Y-10",
+                    "Type": "DrawingSheet"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-10",
+                    "Type": "Schedule"
+                },
+                {
+                    "Name": "3D KẾT CẤU BT",
+                    "Type": "ThreeD"
+                },
+                {
+                    "Name": "Detail 2",
+                    "Type": "Detail"
+                },
+                {
+                    "Name": "{3D - dinhthit25}",
+                    "Type": "ThreeD"
+                }
+            ],
+            "Schedules": [
+                {
+                    "Name": "THỐNG KÊ CỬA ĐI"
+                },
+                {
+                    "Name": "Room Finish Schedule"
+                },
+                {
+                    "Name": "Window Schedule"
+                },
+                {
+                    "Name": "Working_View List"
+                },
+                {
+                    "Name": "Working_Sheet List"
+                },
+                {
+                    "Name": "Sheet Index"
+                },
+                {
+                    "Name": "Space Outdoor Air Schedule"
+                },
+                {
+                    "Name": "Electrical Analytical Bus Schedule"
+                },
+                {
+                    "Name": "Electrical Analytical Load Schedule"
+                },
+                {
+                    "Name": "Level Schedule"
+                },
+                {
+                    "Name": "Structural Foundation Schedule"
+                },
+                {
+                    "Name": "Structural Column Schedule"
+                },
+                {
+                    "Name": "Structural Framing Schedule"
+                },
+                {
+                    "Name": "Structural Wall Schedule"
+                },
+                {
+                    "Name": "THỐNG KÊ CỔ CỘT"
+                },
+                {
+                    "Name": "KIẾN TRÚC"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP MÓNG M2"
+                },
+                {
+                    "Name": "KẾT CẤU"
+                },
+                {
+                    "Name": "THỐNG KÊ GIẰNG MÓNG"
+                },
+                {
+                    "Name": "Thống kê cửa sổ"
+                },
+                {
+                    "Name": "THỐNG KÊ TƯỜNG GẠCH"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG MÓNG"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG DẦM MÁI"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP MÓNG M1"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-1"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-2"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-3"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-2"
+                },
+                {
+                    "Name": "KHỐI LƯỢNG TRẦN THẠCH CAO"
+                },
+                {
+                    "Name": "KHỐI LƯỢNG GẠCH LÁT"
+                },
+                {
+                    "Name": "THỐNG KÊ VÁCH CỬA SỔ"
+                },
+                {
+                    "Name": "DANH MỤC BẢN VẼ KIẾN TRÚC"
+                },
+                {
+                    "Name": "DANH MỤC BẢN VẼ KẾT CẤU"
+                },
+                {
+                    "Name": "Gạch chân móng, trên cửa, sơn đỏ"
+                },
+                {
+                    "Name": "THỐNG KÊ KÈ ĐÁ CHÂN TƯỜNG"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP MÓNG M3"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-4"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-5"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-6"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-7"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-8"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-9"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-X-10"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-1"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-2"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-3"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-4"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-5"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-6"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-1"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP C1"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP C3"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP C2"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-1"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-2"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-3"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-4"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-5"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-6"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-7"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-8"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-9"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-X-10"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-1"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-3"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-4"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-5"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-6"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-7"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-8"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP DM-Y-9"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-2"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-4"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-5"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-6"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-7"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-8"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-X-9"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-1"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-2"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-3"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-4"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-5"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-6"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-7"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-8"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-9"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP SÀN PHỤ SẢNH CHÍNH"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP SÀN PHỤ MÁI NHÀ VỆ SINH"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP SÀN MÁI"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG CỔ CỘT"
+                },
+                {
+                    "Name": "THỐNG KÊ XÀ GỒ LỢP MÁI"
+                },
+                {
+                    "Name": "THỐNG KÊ MÁI LỢP"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP SÀN PHỤ SẢNH CHÍNH Copy 1"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG CỘT"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG LANH TÔ"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG SÀN MÁI"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG SÀN PHỤ SẢNH VÀ NHÀ VS"
+                },
+                {
+                    "Name": "Kết cấu thép"
+                },
+                {
+                    "Name": "THỐNG KÊ BÊ TÔNG GIẰNG MÓNG"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP GM-Y-1 Copy 1"
+                },
+                {
+                    "Name": "THỐNG KÊ CỐT THÉP LT-Y-10"
+                }
+            ],
+            "Annotations": [
+                {
+                    "Text": "Aligned and Linear\r",
+                    "PositionX": 1.9866666666666553,
+                    "PositionY": -9.79589353668149
+                },
+                {
+                    "Text": "Arc Length\r",
+                    "PositionX": 7.802388529610796,
+                    "PositionY": -2.888323875890593
+                },
+                {
+                    "Text": "Angular\r",
+                    "PositionX": 18.61192464344014,
+                    "PositionY": -2.888323875890593
+                },
+                {
+                    "Text": "Radius\r",
+                    "PositionX": 7.802388529610796,
+                    "PositionY": -7.060019256899773
+                },
+                {
+                    "Text": "Diameter\r",
+                    "PositionX": 13.661212388924504,
+                    "PositionY": -2.888323875890593
+                },
+                {
+                    "Text": "Dimension Types\r",
+                    "PositionX": 0.31999999999998885,
+                    "PositionY": 0.3448776654172346
+                },
+                {
+                    "Text": "Text Types\r",
+                    "PositionX": 0.3199999999999672,
+                    "PositionY": -13.071789001249433
+                },
+                {
+                    "Text": "1/4\" Trebuchet MS\rA B C D E F G H I J K L M N O P Q R S T U V Y X Y Z\ra b c d e f g h i j k l m n o p q r s t u v w x y z  1234567890\rThe quick brown fox jumps over the lazy dog! \r",
+                    "PositionX": 1.9866666666666317,
+                    "PositionY": -15.739301890925148
+                },
+                {
+                    "Text": "3/32\" Trebuchet MS\rA B C D E F G H I J K L M N O P Q R S T U V Y X Y Z\ra b c d e f g h i j k l m n o p q r s t u v w x y z  1234567890\rThe quick brown fox jumps over the lazy dog!\r \r",
+                    "PositionX": 1.9866666666666246,
+                    "PositionY": -25.73930189092515
+                },
+                {
+                    "Text": "Schedule Default\rA B C D E F G H I J K L M N O P Q R S T U V Y X Y Z\ra b c d e f g h i j k l m n o p q r s t u v w x y z  1234567890\rThe quick brown fox jumps over the lazy dog!\r \r",
+                    "PositionX": 1.9866666666666104,
+                    "PositionY": -33.73930189092516
+                },
+                {
+                    "Text": "Working Notes\rA B C D E F G H I J K L M N O P Q R S T U V Y X Y Z\ra b c d e f g h i j k l m n o p q r s t u v w x y z  1234567890\rThe quick brown fox jumps over the lazy dog!\r \r",
+                    "PositionX": 1.9866666666666033,
+                    "PositionY": -38.405968557591834
+                },
+                {
+                    "Text": "3/32\" Trebuchet MS .8\rA B C D E F G H I J K L M N O P Q R S T U V Y X Y Z\ra b c d e f g h i j k l m n o p q r s t u v w x y z  1234567890\rThe quick brown fox jumps over the lazy dog!\r \r",
+                    "PositionX": 1.9866666666666175,
+                    "PositionY": -29.73930189092515
+                },
+                {
+                    "Text": "Symbols\r",
+                    "PositionX": 0.31999999999998885,
+                    "PositionY": 0.3448776654172346
+                },
+                {
+                    "Text": "GHI CHÚ:\r",
+                    "PositionX": 5.123380017580085,
+                    "PositionY": 14.634492669593676
+                },
+                {
+                    "Text": "- BÊ TÔNG MÓNG, CỘT, DẦM, SÀN ĐÁ 1X2, CẤP ĐỘ BỀN B25\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 4.747266829318324
+                },
+                {
+                    "Text": "- THÉP CÓ d<10, NHÓM CB240-T, CÓ Rs=2250 kG/cm2\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 11.948710398872155
+                },
+                {
+                    "Text": "- THÉP CÓ d>=10, NHÓM CB400-V, CÓ Rs=3650 kG/cm2\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 10.751203837192358
+                },
+                {
+                    "Text": "- CHIỀU DÀY LỚP BÊ TÔNG BẢO VỆ MÓNG LÀ 50 mm\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 8.306978115407576
+                },
+                {
+                    "Text": "- CHIỀU DÀY LỚP BÊ TÔNG BẢO VỆ CỘT, DẦM LÀ 25 mm\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 9.520888876562433
+                },
+                {
+                    "Text": "- KHI THI CÔNG CHÚ Ý CÁC BẢN VẼ KỸ THUẬT CÓ LIÊN QUAN\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 5.895560792572928
+                },
+                {
+                    "Text": "- TRONG QUÁ TRÌNH THI CÔNG NẾU CÓ PHÁT HIỆN SAI KHÁC,\rCẦN BÁO CHO BÊN THIẾT KẾ ĐỂ CÓ GIẢI PHÁP XỬ LÝ THÍCH HỢP\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 3.582568666588662
+                },
+                {
+                    "Text": "- CHIỀU DÀY LỚP BÊ TÔNG BẢO VỆ GIẰNG MÓNG LÀ 40 mm\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 7.0438547558275175
+                },
+                {
+                    "Text": "KHU VỰC BỐ TRÍ SÀN ÂM\r",
+                    "PositionX": 9.61364094020001,
+                    "PositionY": 12.01830619093495
+                },
+                {
+                    "Text": "KHU VỰC BỐ TRÍ SÀN DƯƠNG\r",
+                    "PositionX": 9.61364094020001,
+                    "PositionY": 10.68956603345463
+                },
+                {
+                    "Text": "GHI CHÚ:\r",
+                    "PositionX": 5.123380017580085,
+                    "PositionY": 14.634492669593676
+                },
+                {
+                    "Text": "- BÊ TÔNG MÓNG, CỘT, DẦM, SÀN ĐÁ 1X2, CẤP ĐỘ BỀN B25\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 5.928369191523052
+                },
+                {
+                    "Text": "- THÉP CÓ d<10, NHÓM CB240-T, CÓ Rs=2250 kG/cm2\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 11.948710398872155
+                },
+                {
+                    "Text": "- THÉP CÓ d>=10, NHÓM CB400-V, CÓ Rs=3650 kG/cm2\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 10.751203837192358
+                },
+                {
+                    "Text": "- CHIỀU DÀY LỚP BÊ TÔNG BẢO VỆ SÀN LÀ 15 mm\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 8.306978115407576
+                },
+                {
+                    "Text": "- CHIỀU DÀY LỚP BÊ TÔNG BẢO VỆ CỘT, DẦM LÀ 25 mm\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 9.520888876562433
+                },
+                {
+                    "Text": "- KHI THI CÔNG CHÚ Ý CÁC BẢN VẼ KỸ THUẬT CÓ LIÊN QUAN\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 7.0766631547776555
+                },
+                {
+                    "Text": "- TRONG QUÁ TRÌNH THI CÔNG NẾU CÓ PHÁT HIỆN SAI KHÁC,\rCẦN BÁO CHO BÊN THIẾT KẾ ĐỂ CÓ GIẢI PHÁP XỬ LÝ THÍCH HỢP\r",
+                    "PositionX": 5.123098323519998,
+                    "PositionY": 4.763671028793388
+                },
+                {
+                    "Text": "1.1 - GHI CHÚ TRỤC ĐỊNH VỊ\r",
+                    "PositionX": 4.676581885769733,
+                    "PositionY": 29.019686229690947
+                },
+                {
+                    "Text": "1.2 - GHI CHÚ COTE CAO ĐỘ\r",
+                    "PositionX": 4.676581885769728,
+                    "PositionY": 26.285652983846674
+                },
+                {
+                    "Text": "1.3 - KÝ HIỆU VẾT CẮT\r",
+                    "PositionX": 4.676581885769724,
+                    "PositionY": 23.551619738002408
+                },
+                {
+                    "Text": "1.4 - KÝ HIỆU TRIỂN KHAI MẶT ĐỨNG\r",
+                    "PositionX": 11.785068324964834,
+                    "PositionY": 29.019686229690922
+                },
+                {
+                    "Text": "1.5 - KÝ HIỆU TRIỂN KHAI CHI TIẾT\r",
+                    "PositionX": 11.78506832496483,
+                    "PositionY": 26.285652983846653
+                },
+                {
+                    "Text": "1.6 - KÝ HIỆU MẶT BẰNG TRẦN\r",
+                    "PositionX": 11.785068324964826,
+                    "PositionY": 23.551619738002383
+                },
+                {
+                    "Text": "1.8 - KÝ HIỆU ĐIỀU CHỈNH BẢN VẼ\r",
+                    "PositionX": 18.893554764159934,
+                    "PositionY": 29.019686229690898
+                },
+                {
+                    "Text": "1.9 - KÝ HIỆU KHÁC\r",
+                    "PositionX": 18.893554764159926,
+                    "PositionY": 26.28565298384663
+                },
+                {
+                    "Text": "- Ký hiệu trục định vị theo phương X\r",
+                    "PositionX": 6.644605064191968,
+                    "PositionY": 27.987330374127005
+                },
+                {
+                    "Text": "- Ký hiệu trục định vị theo phương Y\r",
+                    "PositionX": 6.644605064191966,
+                    "PositionY": 27.15314198662444
+                },
+                {
+                    "Text": "Tên cao độ\r",
+                    "PositionX": 6.252175035272064,
+                    "PositionY": 25.76636459091641
+                },
+                {
+                    "Text": "Cao độ\r",
+                    "PositionX": 6.252175035272064,
+                    "PositionY": 25.487493199840294
+                },
+                {
+                    "Text": "+0.000\r",
+                    "PositionX": 4.99172889839719,
+                    "PositionY": 24.662341058821845
+                },
+                {
+                    "Text": "-0.050\r",
+                    "PositionX": 5.013174701238642,
+                    "PositionY": 24.41721441066935
+                },
+                {
+                    "Text": "Cao độ cote hoàn thiện\r",
+                    "PositionX": 6.252175035272062,
+                    "PositionY": 24.67986271048502
+                },
+                {
+                    "Text": "Cao độ cote phần thô\r",
+                    "PositionX": 6.252175035272062,
+                    "PositionY": 24.400991319408902
+                },
+                {
+                    "Text": "+0.000\r",
+                    "PositionX": 8.289475315932219,
+                    "PositionY": 25.715317186217582
+                },
+                {
+                    "Text": "1.2.2 - CAO ĐỘ COTE MẶT BẰNG\r",
+                    "PositionX": 4.493355725834637,
+                    "PositionY": 23.90842852822304
+                },
+                {
+                    "Text": "1.2.1 - CAO ĐỘ COTE LEVEL\r",
+                    "PositionX": 4.493355725834639,
+                    "PositionY": 25.062190557969316
+                },
+                {
+                    "Text": "1.2.4 - CAO ĐỘ COTE THÔ (MĐ&MC)\r",
+                    "PositionX": 8.047598945432185,
+                    "PositionY": 23.908428528223027
+                },
+                {
+                    "Text": "1.2.3 - CAO ĐỘ COTE HOÀN THIỆN (MĐ&MC)\r",
+                    "PositionX": 8.047598945432187,
+                    "PositionY": 25.06219055796931
+                },
+                {
+                    "Text": "Ký hiệu cote cao độ\r",
+                    "PositionX": 9.834107565120192,
+                    "PositionY": 25.501817340694938
+                },
+                {
+                    "Text": "Cao độ\r",
+                    "PositionX": 9.834107565120192,
+                    "PositionY": 25.747880332820923
+                },
+                {
+                    "Text": "-0.050\r",
+                    "PositionX": 8.289475315932217,
+                    "PositionY": 24.54515095699623
+                },
+                {
+                    "Text": "Ký hiệu cote cao độ\r",
+                    "PositionX": 9.83410756512019,
+                    "PositionY": 24.33165111147359
+                },
+                {
+                    "Text": "Cao độ\r",
+                    "PositionX": 9.83410756512019,
+                    "PositionY": 24.577714103599575
+                },
+                {
+                    "Text": "Số hiệu vết cắt\r",
+                    "PositionX": 9.38833390541409,
+                    "PositionY": 23.01889906638229
+                },
+                {
+                    "Text": "Bản vẽ thể hiện\r",
+                    "PositionX": 9.388333905414088,
+                    "PositionY": 22.740027675306173
+                },
+                {
+                    "Text": "Số hiệu vết cắt\r",
+                    "PositionX": 9.388333905414088,
+                    "PositionY": 21.82903185170909
+                },
+                {
+                    "Text": "Bản vẽ thể hiện\r",
+                    "PositionX": 9.388333905414086,
+                    "PositionY": 21.550160460632974
+                },
+                {
+                    "Text": "1.3.2 - VẾT CẮT CHI TIẾT\r",
+                    "PositionX": 4.493355725834633,
+                    "PositionY": 21.174395282378768
+                },
+                {
+                    "Text": "1.3.1 - VẾT CẮT CHÍNH\r",
+                    "PositionX": 4.493355725834634,
+                    "PositionY": 22.34456151159996
+                },
+                {
+                    "Text": "Số hiệu mặt đứng\r",
+                    "PositionX": 14.231779405177328,
+                    "PositionY": 28.2352524281993
+                },
+                {
+                    "Text": "Xem bản vẽ thể hiện\r",
+                    "PositionX": 14.231779405177326,
+                    "PositionY": 27.26131088892217
+                },
+                {
+                    "Text": "Số hiệu chi tiết\r",
+                    "PositionX": 15.958976741944365,
+                    "PositionY": 25.195529130869744
+                },
+                {
+                    "Text": "Bản vẽ thể hiện\r",
+                    "PositionX": 15.958976741944365,
+                    "PositionY": 24.61717743601716
+                },
+                {
+                    "Text": "Khu vực trích chi tiết\r",
+                    "PositionX": 14.290793948335816,
+                    "PositionY": 24.07489224200033
+                },
+                {
+                    "Text": "Số hiệu lần chỉnh sửa\r",
+                    "PositionX": 23.199004107341505,
+                    "PositionY": 28.026402789631796
+                },
+                {
+                    "Text": "Khu vực chỉnh sửa\r",
+                    "PositionX": 22.066127952237945,
+                    "PositionY": 26.88540633536681
+                },
+                {
+                    "Text": "Ký hiệu trần\r",
+                    "PositionX": 13.245354954227592,
+                    "PositionY": 22.407502411881087
+                },
+                {
+                    "Text": "Cao độ trần\r",
+                    "PositionX": 13.245354954227592,
+                    "PositionY": 22.11123261595683
+                },
+                {
+                    "Text": "- Ký hiệu hoàn thiện bề mặt tường\r",
+                    "PositionX": 23.23181250629164,
+                    "PositionY": 24.490707682560583
+                },
+                {
+                    "Text": "- Ghi chú độ dốc (mặt bằng)\r",
+                    "PositionX": 23.49588624239654,
+                    "PositionY": 23.803043472034283
+                },
+                {
+                    "Text": "1.9.2 - KÝ HIỆU CỬA ĐI\r",
+                    "PositionX": 18.71062594159657,
+                    "PositionY": 23.68120055374933
+                },
+                {
+                    "Text": "Ký hiệu cửa đi\r",
+                    "PositionX": 20.18938429441969,
+                    "PositionY": 24.47420390611714
+                },
+                {
+                    "Text": "Kích thước cửa (rộng x cao)\r",
+                    "PositionX": 20.18938429441969,
+                    "PositionY": 24.222751348388314
+                },
+                {
+                    "Text": "1.9.3 - KÝ HIỆU CỬA SỔ\r",
+                    "PositionX": 18.71062594159657,
+                    "PositionY": 22.453331044140423
+                },
+                {
+                    "Text": "Ký hiệu cửa sổ\r",
+                    "PositionX": 20.189384294419693,
+                    "PositionY": 23.32726687506129
+                },
+                {
+                    "Text": "Kích thước cửa ( rộng x cao)\r",
+                    "PositionX": 20.189384294419693,
+                    "PositionY": 23.07520753429612
+                },
+                {
+                    "Text": "Chiều cao bậu cửa\r",
+                    "PositionX": 20.189384294419693,
+                    "PositionY": 22.838472487115283
+                },
+                {
+                    "Text": "1.9.1 - KÝ HIỆU PHÒNG\r",
+                    "PositionX": 18.71062594159657,
+                    "PositionY": 24.955491717546572
+                },
+                {
+                    "Text": "- Ký hiệu tường (mặt bằng)\r",
+                    "PositionX": 23.23181250629164,
+                    "PositionY": 25.147000000845985
+                },
+                {
+                    "Text": "Tên phòng\r",
+                    "PositionX": 20.731420359508075,
+                    "PositionY": 25.69979513723746
+                },
+                {
+                    "Text": "Diện tích\r",
+                    "PositionX": 20.731420359508075,
+                    "PositionY": 25.395354263135644
+                },
+                {
+                    "Text": "- Ký hiệu chênh cote (mặt bằng)\r",
+                    "PositionX": 23.23181250629164,
+                    "PositionY": 25.737742368013134
+                },
+                {
+                    "Text": "1.9.4 - KÝ HIỆU CẤU TẠO (MẶT CẮT)\r",
+                    "PositionX": 18.71062594159657,
+                    "PositionY": 21.184739618068726
+                },
+                {
+                    "Text": "Ký hiệu cấu tạo\r",
+                    "PositionX": 19.340753255942293,
+                    "PositionY": 21.943460170662703
+                },
+                {
+                    "Text": "- Ký hiệu tâm lát (mặt bằng)\r",
+                    "PositionX": 23.231812506291636,
+                    "PositionY": 23.178371724555333
+                },
+                {
+                    "Text": "- Ký hiệu thiết bị wc\r",
+                    "PositionX": 23.231812506291636,
+                    "PositionY": 22.55501214450284
+                },
+                {
+                    "Text": "1.9.5 - KÝ HIỆU ĐỒ NỘI THẤT\r",
+                    "PositionX": 22.264869161194127,
+                    "PositionY": 21.184739618068715
+                },
+                {
+                    "Text": "Type-1\r",
+                    "PositionX": 22.232060762243997,
+                    "PositionY": 22.07674429139761
+                },
+                {
+                    "Text": "Type-2\r",
+                    "PositionX": 22.232060762243997,
+                    "PositionY": 21.732256102421236
+                },
+                {
+                    "Text": "Ký hiệu đối tượng\r",
+                    "PositionX": 24.382468674270637,
+                    "PositionY": 22.040614186795793
+                },
+                {
+                    "Text": "Ký hiệu đối tượng\r",
+                    "PositionX": 24.382468674270637,
+                    "PositionY": 21.737136496507077
+                },
+                {
+                    "Text": "Mô tả\r",
+                    "PositionX": 24.382468674270637,
+                    "PositionY": 21.495174554249857
+                },
+                {
+                    "Text": "1.7 - GHI CHÚ ĐƯỜNG KÍCH THƯỚC\r",
+                    "PositionX": 15.339311544562381,
+                    "PositionY": 23.551619738002373
+                },
+                {
+                    "Text": "BẢNG GHI CHÚ CHUNG\r",
+                    "PositionX": 3.8826414707751797,
+                    "PositionY": 23.177739175102623
+                },
+                {
+                    "Text": "Chỉ số dim\r",
+                    "PositionX": 17.398715166152776,
+                    "PositionY": 23.083349083311916
+                },
+                {
+                    "Text": "Thước dim\r",
+                    "PositionX": 17.39871516615278,
+                    "PositionY": 22.756512651417967
+                },
+                {
+                    "Text": "1.8 - 2.0 - khổ giấy A4\r",
+                    "PositionX": 16.66999435684154,
+                    "PositionY": 22.168991586572666
+                },
+                {
+                    "Text": "2.0 - 2.2 - khổ giấy A3\r",
+                    "PositionX": 16.66999435684154,
+                    "PositionY": 21.92292859444668
+                },
+                {
+                    "Text": "2.4 - 2.6 - khổ giấy A2\r",
+                    "PositionX": 16.66999435684154,
+                    "PositionY": 21.676865602320696
+                },
+                {
+                    "Text": "2.6 - 2.8 - khổ giấy A1\r",
+                    "PositionX": 16.66999435684154,
+                    "PositionY": 21.43080261019471
+                },
+                {
+                    "Text": "2.8 - 3.0 - khổ giấy A0\r",
+                    "PositionX": 16.66999435684154,
+                    "PositionY": 21.184739618068726
+                },
+                {
+                    "Text": "X \r",
+                    "PositionX": 15.765525480906126,
+                    "PositionY": 21.676865602320696
+                },
+                {
+                    "Text": "DANH MỤC VẬT LIỆU VÀ CÁC HỆ THỐNG, THIẾT BỊ HOÀN THIỆN CƠ BẢN CHO NHÀ LIỀN KỀ DỰ ÁN NHÀ Ở DO CHỦ ĐẦU TƯ CHỈ ĐỊNH \u000b1. Mục tiêu : Xây dựng hiện đại, vật tư hoàn thiện cao cấp, sử dụng vật liệu trong nước hoặc liên doanh .\u000b2. Trần thạch cao ngoài nhà (nếu có) sử dụng tấm thạch cao chống ẩm 9mm Gyproc, khung xương Vĩnh Tường.\r3. Sơn bả tường ngoài nhà sử dụng sơn bả ngoài nhà hãng sơn JOTUN , bả 2 nước, sơn 1 nước lót và 2 nước màu trắng sáng.\r4. Gạch lát sân KT 300x300 Viglacera chống trơn. \r5. Bậc tam cấp ngoài nhà mặt bậc ốp đá Granite trong nước ( đá đen Bình Định 18 ± 2 mm ).\r6. Vữa xây trát là vữa xi măng mác75#, trát tường ngoài chiều dày 1,5cm. \r7. Tường xây gạch đặc, gạch lỗ là gạch loại 1 ( Tuynel…không sử dụng gạch Quảng Ninh và các loại gạch nước mặn, nước lợ).\r8. Thép sử dụng cho toàn công trình là thép liên doanh: Việt Ý, Việt Nhật, Hòa Phát, Việt Hàn.\r9. Xi măng sử dụng cho toàn công trình là xi măng Bỉm Sơn, Hoàng Mai.\r10. Hệ thống cáp, dây dẫn chỉ định loại vật tư Cadisun.\r11. Hệ thống cấp nước chỉ định ống PPR Tiền Phong ( ống cấp lạnh PN10).\r12. Hệ thống thoát nước chỉ định ống PVC ( C2 ) Tiền Phong (đồng bộ phụ kiện).\r13. Một số chỉ định chi tiết cụ thể như sau:\r",
+                    "PositionX": 5.834552146598966,
+                    "PositionY": 47.75548771988865
+                },
+                {
+                    "Text": "STT\r",
+                    "PositionX": 6.378711207919162,
+                    "PositionY": 37.07781843693721
+                },
+                {
+                    "Text": "HẠNG MỤC\r",
+                    "PositionX": 9.210670226420994,
+                    "PositionY": 37.07781843693721
+                },
+                {
+                    "Text": "NỘI DUNG CÔNG VIỆC THEO ĐƠN ĐẶT HÀNG CỦA CHỦ ĐẦU TƯ\r",
+                    "PositionX": 21.515089670005345,
+                    "PositionY": 37.07781843693721
+                },
+                {
+                    "Text": "MÔ TẢ\r",
+                    "PositionX": 17.194513781964226,
+                    "PositionY": 36.421650457934554
+                },
+                {
+                    "Text": "GHI CHÚ\r",
+                    "PositionX": 24.41236155099311,
+                    "PositionY": 36.42165045793453
+                },
+                {
+                    "Text": "I\r",
+                    "PositionX": 6.37871120791916,
+                    "PositionY": 35.76548247893196
+                },
+                {
+                    "Text": "Phần bên ngoài nhà\r",
+                    "PositionX": 7.950697423078298,
+                    "PositionY": 35.76548247893196
+                },
+                {
+                    "Text": "1\r",
+                    "PositionX": 6.378711207919158,
+                    "PositionY": 35.10931449992933
+                },
+                {
+                    "Text": "Bậc tam cấp\r",
+                    "PositionX": 7.950697423078296,
+                    "PositionY": 35.10931449992933
+                },
+                {
+                    "Text": "Lát đá Granite trong nước \r",
+                    "PositionX": 14.557101039018022,
+                    "PositionY": 35.10931449992933
+                },
+                {
+                    "Text": "Đá đen kim sa Bình Định \r",
+                    "PositionX": 21.808726426475637,
+                    "PositionY": 35.10931449992932
+                },
+                {
+                    "Text": "2\r",
+                    "PositionX": 6.378711207919158,
+                    "PositionY": 34.453146520926715
+                },
+                {
+                    "Text": "Cửa đi\r",
+                    "PositionX": 7.950697423078294,
+                    "PositionY": 34.453146520926715
+                },
+                {
+                    "Text": "- Cửa vào chính: Cửa nhôm Owin bản nhôm 200, kính cường lực 8mm.\r- Cửa phụ: Cửa nhôm xingfa bản lắp đặt khóa vân tay.\r",
+                    "PositionX": 14.557101039018018,
+                    "PositionY": 34.453146520926715
+                },
+                {
+                    "Text": "- Lắp đặt toàn bộ cửa đi mặt đứng, mặt sau, mặt bên tiếp giáp ngoài trời.\u000b- Đầy đủ phụ kiện đi kèm. ( Phụ kiện Kinlong đồng bộ chính hãng loại 1, gioăng kép EDPM, keo đặc chủng Dowcorning Eurowindow, khóa đa điểm) \r",
+                    "PositionX": 21.7749488080469,
+                    "PositionY": 34.45314652092669
+                },
+                {
+                    "Text": "3\r",
+                    "PositionX": 6.378711207919148,
+                    "PositionY": 27.95708352880075
+                },
+                {
+                    "Text": "Cửa sổ\r",
+                    "PositionX": 7.950697423078285,
+                    "PositionY": 27.95708352880075
+                },
+                {
+                    "Text": "Cửa nhôm Xingfa màu đen xám (Cửa nhôm Xingfa Quảng Đông có tem đỏ của nhà sản xuất, độ dày nhôm theo tiêu chuẩn)\r",
+                    "PositionX": 14.557101039018011,
+                    "PositionY": 27.95708352880075
+                },
+                {
+                    "Text": "- Lắp đặt toàn bộ cửa sổ mặt đứng mặt sau, mặt bên tiếp giáp ngoài trời ( không bao gồm cửa sổ vị trí giếng trời trong nhà). \u000b- Đầy đủ phụ kiện đi kèm.  ( Phụ kiện Kinlong đồng bộ chính hãng loại 1, gioăng kép EDPM, keo đặc chủng Dowcorning Eurowindow, khóa đa điểm)\r",
+                    "PositionX": 21.774948808046894,
+                    "PositionY": 27.95708352880073
+                },
+                {
+                    "Text": "4\r",
+                    "PositionX": 6.378711207919141,
+                    "PositionY": 23.6919916652837
+                },
+                {
+                    "Text": "Ốp lát\r",
+                    "PositionX": 7.950697423078278,
+                    "PositionY": 23.6919916652837
+                },
+                {
+                    "Text": "Lát đá Granite trong nước sảnh \u000bLát gạch chống trơn 300x300 Viglacera chống trơn sân theo thiết kế\r",
+                    "PositionX": 14.557101039018004,
+                    "PositionY": 23.6919916652837
+                },
+                {
+                    "Text": "- Đá vàng Bình Định\r",
+                    "PositionX": 21.774948808046886,
+                    "PositionY": 23.69199166528368
+                },
+                {
+                    "Text": "5\r",
+                    "PositionX": 6.378711207919137,
+                    "PositionY": 21.06731974927321
+                },
+                {
+                    "Text": "Tường \r",
+                    "PositionX": 7.950697423078273,
+                    "PositionY": 21.06731974927321
+                },
+                {
+                    "Text": "Trát toàn bộ phần tường tiếp giáp ngoài trời, tường xây be xung quanh mái, tất cả các hèm cửa, phào chỉ ngoài nhà. Phần tường be xung quanh mái, ban công, bồn hoa đổ bê tông liền khối với sàn độ cao tùy từng vị trí ( tối đa 20cm) \r",
+                    "PositionX": 14.557101039017997,
+                    "PositionY": 21.06731974927321
+                },
+                {
+                    "Text": "Bao gồm toàn bộ phần tường tiếp giáp ngoài trời, hèm cửa. ( Sơn toàn bộ những diện tường đã trát)\r",
+                    "PositionX": 21.77494880804688,
+                    "PositionY": 21.06731974927319
+                },
+                {
+                    "Text": "6\r",
+                    "PositionX": 6.378711207919132,
+                    "PositionY": 17.7864798542601
+                },
+                {
+                    "Text": "Sơn bả\r",
+                    "PositionX": 7.950697423078273,
+                    "PositionY": 17.7864798542601
+                },
+                {
+                    "Text": "Sơn tường ngoài nhà bả 2 nước, sơn lót 1 lớp chống kiềm, sơn hoàn thiện 2 lớp bằng sơn jotun.\r",
+                    "PositionX": 14.557101039017994,
+                    "PositionY": 17.7864798542601
+                },
+                {
+                    "Text": "Bao gồm toàn bộ phần tường tiếp giáp ngoài trời, hèm cửa. ( Sơn toàn bộ những diện tường đã trát)\r",
+                    "PositionX": 21.77494880804688,
+                    "PositionY": 17.78647985426008
+                },
+                {
+                    "Text": "7\r",
+                    "PositionX": 6.378711207919126,
+                    "PositionY": 14.76810715084804
+                },
+                {
+                    "Text": "Mái ngói\r",
+                    "PositionX": 7.950697423078273,
+                    "PositionY": 14.76810715084804
+                },
+                {
+                    "Text": "Mái ngói tráng men màu ghi đen, hệ xà gồ kèo thép theo bản vẽ\r",
+                    "PositionX": 14.55710103901799,
+                    "PositionY": 14.768107150848044
+                },
+                {
+                    "Text": "Chi tiết theo thiết kế\r",
+                    "PositionX": 21.774948808046872,
+                    "PositionY": 14.768107150848019
+                },
+                {
+                    "Text": "8\r",
+                    "PositionX": 6.378711207919121,
+                    "PositionY": 10.831099276832314
+                },
+                {
+                    "Text": "Chống thấm, chống mối, chống nóng\r",
+                    "PositionX": 7.950697423078269,
+                    "PositionY": 10.83109927683231
+                },
+                {
+                    "Text": "Chống thấm nhà vệ sinh cao 2m.\r",
+                    "PositionX": 14.557101039017983,
+                    "PositionY": 10.831099276832317
+                },
+                {
+                    "Text": "- Biện pháp chống thấm theo thiết kế. \u000b- Biện pháp chống mối ( nhà thầu tự đưa biện pháp và thi công)\r",
+                    "PositionX": 21.774948808046865,
+                    "PositionY": 10.831099276832292
+                },
+                {
+                    "Text": "STT\r",
+                    "PositionX": 29.9351416541134,
+                    "PositionY": 37.07781843693713
+                },
+                {
+                    "Text": "HẠNG MỤC\r",
+                    "PositionX": 32.76710067261524,
+                    "PositionY": 37.07781843693713
+                },
+                {
+                    "Text": "NỘI DUNG CÔNG VIỆC THEO ĐƠN ĐẶT HÀNG CỦA CHỦ ĐẦU TƯ\r",
+                    "PositionX": 45.07152011619959,
+                    "PositionY": 37.07781843693713
+                },
+                {
+                    "Text": "MÔ TẢ\r",
+                    "PositionX": 40.15710603659995,
+                    "PositionY": 36.42165045793453
+                },
+                {
+                    "Text": "GHI CHÚ\r",
+                    "PositionX": 47.96879199718735,
+                    "PositionY": 36.421650457934454
+                },
+                {
+                    "Text": "II\r",
+                    "PositionX": 29.935141654113387,
+                    "PositionY": 35.76548247893189
+                },
+                {
+                    "Text": "Phần bên trong nhà\r",
+                    "PositionX": 31.77703581804422,
+                    "PositionY": 35.76548247893189
+                },
+                {
+                    "Text": "1\r",
+                    "PositionX": 29.935141654113387,
+                    "PositionY": 35.10931449992926
+                },
+                {
+                    "Text": "Nền\r",
+                    "PositionX": 31.77703581804422,
+                    "PositionY": 35.10931449992926
+                },
+                {
+                    "Text": "Đổ bê tông mác 150 đá 3x6 nền tầng 1.\r",
+                    "PositionX": 36.37021167106265,
+                    "PositionY": 35.10931449992924
+                },
+                {
+                    "Text": "3\r",
+                    "PositionX": 29.935141654113387,
+                    "PositionY": 32.22217539231774
+                },
+                {
+                    "Text": "Tường\r",
+                    "PositionX": 31.77703581804422,
+                    "PositionY": 32.22217539231774
+                },
+                {
+                    "Text": "Tường ngăn trong nhà xây gạch lỗ, vị trí cửa xây gạch đặc.\rTường nhà vệ sinh xây gạch đặc\r",
+                    "PositionX": 36.37021167106265,
+                    "PositionY": 32.222175392317716
+                },
+                {
+                    "Text": "5\r",
+                    "PositionX": 29.935141654113373,
+                    "PositionY": 25.39802841069048
+                },
+                {
+                    "Text": "Bể phốt, bể nước\r",
+                    "PositionX": 31.77703581804422,
+                    "PositionY": 25.39802841069048
+                },
+                {
+                    "Text": "Thi công bể phốt, bể nước theo thiết kế. \r",
+                    "PositionX": 36.37021167106265,
+                    "PositionY": 25.398028410690458
+                },
+                {
+                    "Text": "- Sản xuất, lắp đặt tấm đan nắp bể phốt, bể nước\u000b- Trát bể phốt, bể nước cả trong và ngoài\u000b- Phần trong bể trát tường có đánh màu\u000b- Láng vữa đáy bể phốt, bể nước có đánh màu.\u000b- Chống thấm trong và ngoài cả bể phốt, bể nước.\r",
+                    "PositionX": 44.76916180229624,
+                    "PositionY": 25.398028410690436
+                },
+                {
+                    "Text": "III\r",
+                    "PositionX": 29.93514165411336,
+                    "PositionY": 19.88621738706842
+                },
+                {
+                    "Text": "Phần điện nước\r",
+                    "PositionX": 31.77703581804422,
+                    "PositionY": 19.8862173870685
+                },
+                {
+                    "Text": "1\r",
+                    "PositionX": 29.93514165411336,
+                    "PositionY": 19.230049408065796
+                },
+                {
+                    "Text": "Phần điện\r",
+                    "PositionX": 31.777035818044205,
+                    "PositionY": 19.230049408065796
+                },
+                {
+                    "Text": "Thi công lắp đặt đường điện chờ. ( Bao gồm cả đường ống gen, tiết diện dây theo thiết kế) \r",
+                    "PositionX": 36.370211671062634,
+                    "PositionY": 19.230049408065774
+                },
+                {
+                    "Text": "- Hoàn thiện đường dây cấp điện, truyền hình, internet từ công tơ vào tủ điện tổng tầng 1.\f- Bố trí đầu điện chờ cho toàn bộ đèn ngoài nhà các tầng. ( Đầu bên trong nhà tới vị trí công tắc theo thiết kế)\f- Chống sét theo thiết kế\r",
+                    "PositionX": 44.769161802296225,
+                    "PositionY": 19.230049408065753
+                },
+                {
+                    "Text": "2\r",
+                    "PositionX": 29.935141654113345,
+                    "PositionY": 15.293041534050072
+                },
+                {
+                    "Text": "Phần nước\r",
+                    "PositionX": 31.77703581804419,
+                    "PositionY": 15.293041534050072
+                },
+                {
+                    "Text": "Thi công lắp đặt đường cấp thoát nước chờ (Đồng bộ phụ kiện, đường kính ống theo thiết kế)\r",
+                    "PositionX": 36.37021167106262,
+                    "PositionY": 15.293041534050051
+                },
+                {
+                    "Text": "- Hoàn thiện đường ống cấp nước từ đường ống cấp nước hạ tầng qua đồng hồ vào bể nước ngầm.\u000b- Hoàn thiện đường thoát nước từ bể phốt, nước thải, nước rửa ra hố ga thoát nước bẩn của hệ thống thoát nước bẩn hạ tầng ( bổ sung hố ga nếu cần theo thực tế).\u000b- Hoàn thiện đường ống thoát nước mưa từ ban công, sân, mái ra hố ga thoát nước mưa của hệ thống thoát nước mưa hạ tầng ( bổ sung hố ga nếu cần theo thực tế).  \u000b- Hoàn thiện toàn bộ hệ thống cấp thoát nước ngầm dưới nền\r",
+                    "PositionX": 44.76916180229621,
+                    "PositionY": 15.293041534050023
+                },
+                {
+                    "Text": "Ghi chú:  - Lấp đất hoàn trả, đắp cát nền 40cm.\u000b                 - Phần thô tất cả các nhà không được thấm, ngấm, gió, nước vào nhà.\u000b                 - Nhà thầu kết hợp song song giữa danh mục vật liệu này với bản vẽ thiết kế thi công để thi công công trình.\r",
+                    "PositionX": 5.892243935464872,
+                    "PositionY": 6.128274764265578
+                },
+                {
+                    "Text": "4\r",
+                    "PositionX": 29.935141654113387,
+                    "PositionY": 30.12243785950934
+                },
+                {
+                    "Text": "Cửa đi\r",
+                    "PositionX": 31.77703581804422,
+                    "PositionY": 30.12243785950934
+                },
+                {
+                    "Text": "- Cửa thông phòng sử dụng cửa composite vân gỗ\r- Các cửa còn lại là cửa nhôm Xingfa màu đen xám  ( Cửa nhôm Xingfa Quảng Đông có tem đỏ của nhà sản xuất, độ dày nhôm theo tiêu chuẩn) kính hộp  ( kính cường lực 2 bên mỗi bên kính dày 5mm giữa có chân không 9mm)\r",
+                    "PositionX": 36.37021167106265,
+                    "PositionY": 30.12243785950934
+                },
+                {
+                    "Text": "- Đầy đủ phụ kiện đi kèm. ( Phụ kiện Kinlong đồng bộ chính hãng loại 1, gioăng kép EDPM, keo đặc chủng Dowcorning Eurowindow, khóa đa điểm) \r",
+                    "PositionX": 44.76916180229624,
+                    "PositionY": 30.12243785950934
+                },
+                {
+                    "Text": "2\r",
+                    "PositionX": 29.935141654113387,
+                    "PositionY": 34.45314652092664
+                },
+                {
+                    "Text": "Ốp lát\r",
+                    "PositionX": 31.77703581804422,
+                    "PositionY": 34.45314652092664
+                },
+                {
+                    "Text": "Nền nhà lát gạch terrazo 800x800\rNền sảnh lát gạch terrazo 1000x1000\rNền nhà vệ sinh lát gạch chống trơn 600x600\rTường nhà vệ sinh ốp gạch 600x300\r",
+                    "PositionX": 36.37021167106265,
+                    "PositionY": 34.453146520926616
+                },
+                {
+                    "Text": "BẢNG GHI CHÚ CẤU TẠO SÀN\r",
+                    "PositionX": -47.317099760258266,
+                    "PositionY": 0.9957146818720378
+                },
+                {
+                    "Text": "LỚP VỮA TẠO PHẲNG #75 DÀY 15\r",
+                    "PositionX": -1.4117945864018537,
+                    "PositionY": 14.12663532400828
+                },
+                {
+                    "Text": "TƯỜNG XÂY \r",
+                    "PositionX": -1.4117945864018537,
+                    "PositionY": 14.549647934159673
+                },
+                {
+                    "Text": "SF-04\r",
+                    "PositionX": -1.4117945864018537,
+                    "PositionY": 13.893041655451459
+                },
+                {
+                    "Text": "LỚP VỮA TẠO PHẲNG #75 DÀY 15\r",
+                    "PositionX": -5.112775166034256,
+                    "PositionY": 13.786790687970957
+                },
+                {
+                    "Text": "LỚP VỮA TẠO PHẲNG #75 DÀY 15\r",
+                    "PositionX": -1.4264067174555013,
+                    "PositionY": 11.465885623456494
+                },
+                {
+                    "Text": "TƯỜNG XÂY \r",
+                    "PositionX": -1.4264067174555013,
+                    "PositionY": 11.858922697072265
+                },
+                {
+                    "Text": "SF-02\r",
+                    "PositionX": -1.4264067174555013,
+                    "PositionY": 11.035441561198885
+                },
+                {
+                    "Text": "LỚP VỮA TẠO PHẲNG #75 DÀY 15\r",
+                    "PositionX": -5.133755798820324,
+                    "PositionY": 11.465885623456504
+                },
+                {
+                    "Text": "TƯỜNG XÂY \r",
+                    "PositionX": -5.133755798820324,
+                    "PositionY": 11.858922697072275
+                },
+                {
+                    "Text": "SF-01\r",
+                    "PositionX": -5.133755798820324,
+                    "PositionY": 11.035441561198896
+                },
+                {
+                    "Text": "ÁP DỤNG CHO CÁC LOẠI TƯỜNG \rTRONG NHÀ\r",
+                    "PositionX": -4.88357562572069,
+                    "PositionY": 15.062495705786258
+                },
+                {
+                    "Text": "FF-04\r",
+                    "PositionX": -0.4966550999658672,
+                    "PositionY": 13.81297732484337
+                },
+                {
+                    "Text": "FF-01\r",
+                    "PositionX": -4.50210876480306,
+                    "PositionY": 10.970190468712499
+                },
+                {
+                    "Text": "FF-02\r",
+                    "PositionX": -0.7619512844880996,
+                    "PositionY": 10.970190468712488
+                },
+                {
+                    "Text": "LEN CHÂN TƯỜNG ÁP DỤNG SF-04\rVỚI SÀN FF-04\r",
+                    "PositionX": -0.9234089617751664,
+                    "PositionY": 15.062579057784987
+                },
+                {
+                    "Text": "LEN CHÂN TƯỜNG ÁP DỤNG SF-01\rVỚI SÀN FF-01\r",
+                    "PositionX": -4.803952904512652,
+                    "PositionY": 12.323077745449048
+                },
+                {
+                    "Text": "LEN CHÂN TƯỜNG ÁP DỤNG SF-02\rVỚI SÀN FF-02\r",
+                    "PositionX": -0.9981786262974266,
+                    "PositionY": 12.323077745449034
+                },
+                {
+                    "Text": "FF-02: GẠCH TERRAZO 1000X1000 CHỐNG TRƠN\r",
+                    "PositionX": 7.914702761006755,
+                    "PositionY": 9.355673024002687
+                },
+                {
+                    "Text": "FF-01: GẠCH TERRAZO 800X800\r\t\r",
+                    "PositionX": 7.914702761006755,
+                    "PositionY": 9.379011033220056
+                },
+                {
+                    "Text": "FF-03: GẠCH GRANITE 600X600 CHỐNG TRƠN\r",
+                    "PositionX": 7.914702761006755,
+                    "PositionY": 9.32332603459621
+                },
+                {
+                    "Text": "GHI CHÚ: \u000b- ỐP CHÂN TƯỜNG SF-01 CHI TIẾT BẢN CẤU TẠO CHUNG.\r- VỮA LÁT: VỮA XI MĂNG DÀY 15MM #75\r- MẠCH VỮA SỬ DỤNG XI MĂNG TRẮNG VÀ BỘT MÀU, NƯỚC THAN, MẠCH LÁT RỘNG 2MM\r",
+                    "PositionX": 8.153134536934456,
+                    "PositionY": 9.381997603851374
+                },
+                {
+                    "Text": "VẬT LIỆU GẠCH\r",
+                    "PositionX": 9.732145983187488,
+                    "PositionY": 15.738124784739954
+                },
+                {
+                    "Text": "GHI CHÚ\r",
+                    "PositionX": 11.553182162703006,
+                    "PositionY": 16.72128286397377
+                },
+                {
+                    "Text": "KÝ HIỆU\r",
+                    "PositionX": 5.704132476402448,
+                    "PositionY": 16.72128286397377
+                },
+                {
+                    "Text": "VẬT LIỆU VỮA KẾT DÍNH\r",
+                    "PositionX": 9.732145983187486,
+                    "PositionY": 14.753872816236017
+                },
+                {
+                    "Text": "BÊ TÔNG KHÔNG CỐT THÉP\r",
+                    "PositionX": 9.732145983187484,
+                    "PositionY": 13.76962084773208
+                },
+                {
+                    "Text": "BÊ TÔNG CỐT THÉP\r",
+                    "PositionX": 9.732145983187483,
+                    "PositionY": 12.785368879228143
+                },
+                {
+                    "Text": "VẬT LIỆU THÉP\r",
+                    "PositionX": 9.73214598318748,
+                    "PositionY": 11.801116910724206
+                },
+                {
+                    "Text": "BÊ TÔNG ĐÁ DĂM\r",
+                    "PositionX": 9.732145983187479,
+                    "PositionY": 10.816864942220269
+                },
+                {
+                    "Text": "VẬT LIỆU CHỐNG THẤM\r",
+                    "PositionX": 9.732145983187477,
+                    "PositionY": 9.832612973716332
+                },
+                {
+                    "Text": "VẬT LIỆU ĐÁ GRANITE (MẶT CẮT)\r",
+                    "PositionX": 9.732145983187475,
+                    "PositionY": 8.848361005212395
+                },
+                {
+                    "Text": "VẬT LIỆU ĐÁ HỘC\r",
+                    "PositionX": 22.068103988436803,
+                    "PositionY": 15.738124784739922
+                },
+                {
+                    "Text": "GHI CHÚ\r",
+                    "PositionX": 24.017704481454942,
+                    "PositionY": 16.72128286397377
+                },
+                {
+                    "Text": "KÝ HIỆU\r",
+                    "PositionX": 17.515156098449687,
+                    "PositionY": 16.72128286397374
+                },
+                {
+                    "Text": "VẬT LIỆU CÁCH ÂM\r",
+                    "PositionX": 22.068103988436803,
+                    "PositionY": 13.769620847732048
+                },
+                {
+                    "Text": "VẬT LIỆU GỖ\r",
+                    "PositionX": 22.068103988436803,
+                    "PositionY": 12.78536887922811
+                },
+                {
+                    "Text": "VẬT LIỆU SỎI\r",
+                    "PositionX": 22.068103988436796,
+                    "PositionY": 11.801116910724174
+                },
+                {
+                    "Text": "VẬT LIỆU CÁT\r",
+                    "PositionX": 22.068103988436796,
+                    "PositionY": 10.816864942220237
+                },
+                {
+                    "Text": "ĐẤT TỰ NHIÊN\r",
+                    "PositionX": 22.068103988436796,
+                    "PositionY": 9.8326129737163
+                },
+                {
+                    "Text": "CỎ SÂN VƯỜN\r",
+                    "PositionX": 22.068103988436796,
+                    "PositionY": 8.848361005212363
+                },
+                {
+                    "Text": "MẶT NƯỚC\r",
+                    "PositionX": 22.06810398843679,
+                    "PositionY": 7.8641090367084265
+                },
+                {
+                    "Text": "VẬT LIỆU ĐÁ MARBLE (MẶT CẮT)\r",
+                    "PositionX": 9.732145983187474,
+                    "PositionY": 7.864109036708459
+                },
+                {
+                    "Text": "CẤP PHỐI ĐÁ DĂM\r",
+                    "PositionX": 22.068103988436803,
+                    "PositionY": 14.753872816235985
+                },
+                {
+                    "Text": "QUY CÁCH THỂ HIỆN BẢN VẼ\r",
+                    "PositionX": -35.9786514845208,
+                    "PositionY": 36.66931360442088
+                },
+                {
+                    "Text": "A- MẶT BẰNG BỐ TRÍ CHUNG\r",
+                    "PositionX": -40.154478932472855,
+                    "PositionY": 32.225555172723844
+                },
+                {
+                    "Text": "1. TÊN BẢN VẼ\r",
+                    "PositionX": -40.34401867129413,
+                    "PositionY": 30.670171260494914
+                },
+                {
+                    "Text": "MẶT BẰNG TẦNG 01\r",
+                    "PositionX": -37.64712677642959,
+                    "PositionY": 28.519318713419036
+                },
+                {
+                    "Text": "TỶ LỆ:\r",
+                    "PositionX": -37.64712677642959,
+                    "PositionY": 26.944515563812736
+                },
+                {
+                    "Text": "2. HIỂN THỊ IUDEX\r",
+                    "PositionX": -40.344018671294144,
+                    "PositionY": 22.796155512463418
+                },
+                {
+                    "Text": "Ký hiệu bản vẽ: A,S, E,P, M, các thông tin ở khung tên\r",
+                    "PositionX": -40.154478932472855,
+                    "PositionY": 20.740403490762777
+                },
+                {
+                    "Text": "3. ĐẶT TÊN GRID\r",
+                    "PositionX": -40.344018671294144,
+                    "PositionY": 18.81930929188671
+                },
+                {
+                    "Text": "(Grid các file link đã ẩn)\r",
+                    "PositionX": -38.84436901825668,
+                    "PositionY": 17.459563595749653
+                },
+                {
+                    "Text": "> Ký hiệu đẩu trục đã đúng chưa?\r> Đầu trục đã thẳng nhau?\r> Kích thước tử trục đầu đến trục cuối\r> Kích thước từ trục đến trục\r> Kiểm tra toại Dim đã đúng chưa? Kích thước cỡ Text)\r> Ký hiệu các Lối tiếp cận, ra vào công trình (Tầng 1)\r> Ký hiệu đường dốc lên xuống, độ dốc %\r> Ký hiệu cầu thang, đánh số bậc\r> Ký hiệu phòng (Diện tích, sổ phòng)\r> Ký hiệu cửa (Cửa PCCC)\r> Ký hiệu cao độ : cốt thô, hoàn thiện\r> Các vị trí chênh cao độ : Có kí hiệu cốt, có ký hiệu giật cốt\r> Cốt tẩng điển hình\r> Ghi chú ống thu nước mái\r> Thiết bị nội thất : halftone (View template)\r> Kiễm tra + Join các cẩu kiện\r",
+                    "PositionX": -63.650733004523524,
+                    "PositionY": 10.493751250866634
+                },
+                {
+                    "Text": "> Ký hiệu đẩu trục đã đúng chưa?\r> Đầu trục đã thẳng nhau?\r> Kích thước tử trục đầu đến trục cuối\r> Kích thước từ trục đến trục\r> Kiểm tra toại Dim đã đúng chưa? Kích thước cỡ Text)\r> Ký hiệu các Lối tiếp cận, ra vào công trình (Tầng 1)\r> Ký hiệu đường dốc lên xuống, độ dốc %\r> Ký hiệu cầu thang, đánh số bậc\r> Ký hiệu phòng (Diện tích, sổ phòng)\r> Ký hiệu cửa (Cửa PCCC)\r> Ký hiệu cao độ : cốt thô, hoàn thiện\r> Các vị trí chênh cao độ : Có kí hiệu cốt, có ký hiệu giật cốt\r> Cốt tẩng điển hình\r> Ghi chú ống thu nước mái\r> Thiết bị nội thất : halftone (View template)\r> Kiễm tra + Join các cẩu kiện\r",
+                    "PositionX": -40.028685760429035,
+                    "PositionY": 10.493751250866557
+                },
+                {
+                    "Text": "BẢNG GHI CHÚ CẤU TẠO TƯỜNG\r",
+                    "PositionX": -7.222718332446176,
+                    "PositionY": 10.684831528344688
+                },
+                {
+                    "Text": "BR2: TƯỜNG GẠCH ĐẶC  DÀY 220mm\r",
+                    "PositionX": 4.861852858122877,
+                    "PositionY": 9.77906180307837
+                },
+                {
+                    "Text": "BR1: TƯỜNG GẠCH LỖ DÀY 110mm\r\t\r",
+                    "PositionX": 4.861852858122877,
+                    "PositionY": 9.80239981229574
+                },
+                {
+                    "Text": "GHI CHÚ: - CÁC KÍCH THƯỚC CỬA LÀ KÍCH THƯỚC HOÀN THIỆN\r                 - VỊ TRÍ CỬA THÔNG PHÒNG, CỬA WC XÂY BẰNG GẠCH ĐẶC\r",
+                    "PositionX": 4.807341410089918,
+                    "PositionY": 9.833104787494946
+                },
+                {
+                    "Text": "BR3: TƯỜNG GẠCH  ĐẶC DÀY 220mm\r",
+                    "PositionX": 4.861852858122877,
+                    "PositionY": 9.756190225864792
+                },
+                {
+                    "Text": "Gạch inax màu be vàng\r",
+                    "PositionX": 50.09280368396298,
+                    "PositionY": 12.119104792957842
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 55.937567450941025,
+                    "PositionY": 2.5617886649795643e-13
+                },
+                {
+                    "Text": "Ốp gạch giả đá 500x250\r",
+                    "PositionX": 55.937567450941046,
+                    "PositionY": 2.5617886649795653e-13
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 55.937567450941025,
+                    "PositionY": 2.5617886649795643e-13
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 55.93756745094103,
+                    "PositionY": 2.5617886649795643e-13
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 55.93756745094104,
+                    "PositionY": 2.561788664979565e-13
+                },
+                {
+                    "Text": "Phào đứng 85x25\r",
+                    "PositionX": 55.93756745094104,
+                    "PositionY": 2.5617886649795643e-13
+                },
+                {
+                    "Text": "Phào ngang 85x25\r",
+                    "PositionX": 55.93756745094104,
+                    "PositionY": 2.5617886649795643e-13
+                },
+                {
+                    "Text": "Mái lợp gạch tráng men\r",
+                    "PositionX": 55.93756745094102,
+                    "PositionY": 2.561788664979564e-13
+                },
+                {
+                    "Text": "Phào đứng 85x25\r",
+                    "PositionX": 32.03664881577082,
+                    "PositionY": 1.460350519532969e-13
+                },
+                {
+                    "Text": "Phào ngang 85x25\r",
+                    "PositionX": 16.80117482945272,
+                    "PositionY": 7.331578411407266e-14
+                },
+                {
+                    "Text": "Phào chân 110x50\r",
+                    "PositionX": 43.19150445881543,
+                    "PositionY": 1.9744053849438795e-13
+                },
+                {
+                    "Text": "Louver nhôm màu trắng\rbên trong có lưới chống côn trùng\r",
+                    "PositionX": 26.275877999038045,
+                    "PositionY": 1.208147082103293e-13
+                },
+                {
+                    "Text": "Sơn màu be vàng\r",
+                    "PositionX": 51.249268700170376,
+                    "PositionY": -22.25580733129338
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 55.93756745094107,
+                    "PositionY": -34.37491212425097
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 55.93756745094107,
+                    "PositionY": -34.37491212425097
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 55.937567450941074,
+                    "PositionY": -34.37491212425097
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 55.93756745094108,
+                    "PositionY": -34.37491212425097
+                },
+                {
+                    "Text": "Phào đứng 30x25\r",
+                    "PositionX": 55.93756745094108,
+                    "PositionY": -34.37491212425097
+                },
+                {
+                    "Text": "Phào ngang 85x25\r",
+                    "PositionX": 55.93756745094107,
+                    "PositionY": -34.37491212425097
+                },
+                {
+                    "Text": "Mái lợp gạch tráng men\r",
+                    "PositionX": 55.93756745094106,
+                    "PositionY": -34.37491212425097
+                },
+                {
+                    "Text": "Phào đứng 85x25\r",
+                    "PositionX": 32.03664881577086,
+                    "PositionY": -34.374912124251075
+                },
+                {
+                    "Text": "Phào ngang 85x25\r",
+                    "PositionX": 17.409490445769613,
+                    "PositionY": -34.37491212425115
+                },
+                {
+                    "Text": "Phào chân 110x50\r",
+                    "PositionX": 43.19150445881547,
+                    "PositionY": -34.374912124251026
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 0.0,
+                    "PositionY": 34.9718742392552
+                },
+                {
+                    "Text": "Phào ngang 85x25\r",
+                    "PositionX": 0.0,
+                    "PositionY": 34.97187423925519
+                },
+                {
+                    "Text": "Phào ngang 85x25\r",
+                    "PositionX": 0.0,
+                    "PositionY": 34.971874239255186
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 0.0,
+                    "PositionY": 34.9718742392552
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 0.0,
+                    "PositionY": 34.97187423925519
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 0.0,
+                    "PositionY": 34.971874239255186
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 0.0,
+                    "PositionY": -6.548085352267854
+                },
+                {
+                    "Text": "Ốp gạch inax be vàng\r",
+                    "PositionX": 0.0,
+                    "PositionY": -6.548085352267851
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 0.0,
+                    "PositionY": -6.548085352267847
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 0.0,
+                    "PositionY": -6.548085352267854
+                },
+                {
+                    "Text": "Sơn màu cafe\r",
+                    "PositionX": 0.0,
+                    "PositionY": -6.548085352267841
+                },
+                {
+                    "Text": "Phào đứng 85x25\r",
+                    "PositionX": 0.0,
+                    "PositionY": -6.548085352267844
+                },
+                {
+                    "Text": "Phào ngang 85x25\r",
+                    "PositionX": 0.0,
+                    "PositionY": -6.548085352267838
+                },
+                {
+                    "Text": "Ốp gạch giả đá 500x250\r",
+                    "PositionX": 0.0,
+                    "PositionY": -6.548085352267849
+                },
+                {
+                    "Text": "Louver nhôm màu trắng\rCó lưới chống côn trùng bên trong\r",
+                    "PositionX": 0.0,
+                    "PositionY": -6.5480853522678615
+                },
+                {
+                    "Text": "ĐẤT ĐẮP 30CM ĐẦM 1 LẦN\r",
+                    "PositionX": 23.91505706139067,
+                    "PositionY": -7.72715225139109e-14
+                },
+                {
+                    "Text": "ĐẤT TỰ NHIÊN\r",
+                    "PositionX": 17.908103016274858,
+                    "PositionY": -5.821390445288025e-14
+                },
+                {
+                    "Text": "ĐẤT ĐẮP ĐỘ CHẶT 95\rĐỔ 1 LỚP 30CM/ 1 LẦN ĐẦM\r",
+                    "PositionX": 2.256279435158927e-14,
+                    "PositionY": 12.630704615097917
+                },
+                {
+                    "Text": "ĐẤT TỰ NHIÊN\r",
+                    "PositionX": 1.7840335893850768e-14,
+                    "PositionY": 10.633842483275222
+                },
+                {
+                    "Text": "Ô KT 475X350\r",
+                    "PositionX": 44.705852979314884,
+                    "PositionY": -1.8829382497642655e-13
+                },
+                {
+                    "Text": "KHU VỰC BỐ TRÍ SÀN PHỤ TẠI SẢNH VÀ NHÀ VỆ SINH\r",
+                    "PositionX": 9.61364094020001,
+                    "PositionY": 12.01830619093495
+                },
+                {
+                    "Text": "VIÊN GẠCH NÀY CẮT VỊ TRÍ NÀY\r",
+                    "PositionX": 31.850918318955593,
+                    "PositionY": -4.641759986217962
+                }
+            ]
+        },
+        "Timestamp": "2025-04-15 15:14:12.915048",
+        "Version": 1
+    }
+]

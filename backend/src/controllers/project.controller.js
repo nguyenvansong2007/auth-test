@@ -8,13 +8,14 @@ export const createProject = async (req, res) => {
   try {
     const project = await Project.create({
       projectName: req.body.projectName,
-      projectNumber: req.body.projectNumber,
-      projectType: req.body.projectType,
-      template: req.body.template,
-      address: req.body.address,
-      timeZone: req.body.timeZone,
-      projectValue: req.body.projectValue,
-      createdBy: req.userId,
+      description: req.body.description,
+      // projectNumber: req.body.projectNumber,
+      // projectType: req.body.projectType,
+      // template: req.body.template,
+      // address: req.body.address,
+      // timeZone: req.body.timeZone,
+      // projectValue: req.body.projectValue,
+      // createdBy: req.userId,
     });
     // Lấy thông tin người dùng từ bảng User
     const creator = await User.findByPk(
