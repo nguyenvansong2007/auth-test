@@ -1,12 +1,43 @@
-# React + Vite
+# BIM 3D Viewer with Speckle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🏗️ About BIM and Speckle
 
-Currently, two official plugins are available:
+**BIM (Building Information Modeling)** là một quy trình số hóa toàn bộ thông tin trong vòng đời của một công trình xây dựng — từ thiết kế, thi công đến vận hành. Mô hình BIM không chỉ chứa hình học 3D mà còn bao gồm các thuộc tính chi tiết về vật liệu, chi phí, thời gian và kỹ thuật.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Speckle** là một nền tảng mã nguồn mở cho việc chia sẻ dữ liệu mô hình BIM một cách dễ dàng, linh hoạt và có thể tùy chỉnh giữa nhiều phần mềm khác nhau (Revit, Rhino, AutoCAD, v.v.).
 
-## Expanding the ESLint configuration
+**Speckle Viewer** là một công cụ dựa trên web cho phép người dùng xem và tương tác với mô hình 3D được truyền tải qua Speckle ngay trên trình duyệt mà không cần cài đặt phần mềm CAD nào.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔍 Features
+
+- Hiển thị mô hình 3D BIM từ Speckle Stream.
+- Hỗ trợ tương tác với mô hình: quay, xoay, phóng to/thu nhỏ.
+- Lọc và xem thông tin chi tiết của từng đối tượng trong mô hình.
+- Giao diện web thân thiện, dễ tích hợp vào các hệ thống quản lý công trình.
+
+---
+
+## 🚀 Technology Stack
+
+- **Frontend**: ReactJS
+- **3D Viewer**: Speckle Viewer SDK
+- **Data Source**: Speckle Stream
+
+---
+
+## 📸 Demo
+
+![Speckle BIM Viewer Screenshot](./src/assets/img/img_2.jpg)
+
+---
+
+## 📦 Installation
+
+```bash
+
+cd fe
+npm install
+npm run dev
+```
