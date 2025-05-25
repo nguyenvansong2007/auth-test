@@ -40,40 +40,11 @@ export const verifyToken = async (req, res, next) => {
     }
     req.userId = decoded.id; // Lưu user ID vào request
     next();
-    // try {
-    //   // Gán user vào req để sử dụng sau này
-    //   // const user = User.findByPk(decoded.id);
-    //   // if (!user) {
-    //   //   return res.status(404).send({ message: "User not found." });
-    //   // }
-    // } catch (error) {
-    //   res.status(500).json({ message: `${error}` });
-    // }
+
   });
 };
 
 
-// export const verifyToken = (req, res, next) => {
-//   // access authorization from request header
-//   const Authorization = req.header('authorization');
-//   if (!Authorization) {
-//       // error authorization
-//       const err = new Error('Unauthorized');
-//       err.statusCode = 401;
-//       return next(err);
-//   }
-
-//   // Get token
-//   const token = Authorization.replace('Bearer ', '');
-
-//   // Verify token
-//   const { userId } = jwt.verify(token, process.env.JWT_SECRET);
-
-//   //assign request
-//   req.user = { userId };
-//   next();
-
-// }
 
 export const isAdmin = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
@@ -152,23 +123,22 @@ export const isMember = (req, res, next) => {
 
 
 
-// export const checkRole = (roles) => {
-//   return (req, res, next) => {
-//     if (!roles.includes(req.userRole)) {
-//       return res.status(403).send({ message: "Require proper role!" });
-//     }
-//     next();
-//   };
-// };
+export const verifyModerator = async (req, res, next) => {
+  const userId = req.userId;
 
+  const user = await db.user.findByPk(userId, {
+    include: [{
+      model: db.role,
+      as: 'roles',
+      through: { attributes: [] }
+    }]
+  });
 
+  const isModerator = user.roles.some(r => r.name === 'moderator');
 
+  if (!isModerator) {
+    return res.status(403).json({ message: 'Require Moderator Role!' });
+  }
 
-// export default {
-//   catchError,
-//   verifyToken,
-//   isAdmin,
-//   isModerator,
-//   isModeratorOrAdmin,
-// };
-// module.exports = authJwt;
+  next();
+};

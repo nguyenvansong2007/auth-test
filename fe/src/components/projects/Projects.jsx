@@ -1,101 +1,3 @@
-// import { useState } from "react";
-// import ProjectList from "./ProjectList";
-// import ProjectForm from "./ProjectForm";
-// import { PlusCircle } from "lucide-react";
-// import { Button } from "../ui/button";
-
-// export default function ProjectDashboard() {
-//   const [projects, setProjects] = useState([
-//     {
-//       id: "1",
-//       title: "Website Redesign",
-//       description: "Redesign company website with modern UI",
-//       status: "in-progress",
-//       dueDate: "2023-12-31",
-//     },
-//     {
-//       id: "2",
-//       title: "Mobile App Development",
-//       description: "Create a mobile app for our customers",
-//       status: "not-started",
-//       dueDate: "2024-03-15",
-//     },
-//     {
-//       id: "3",
-//       title: "Database Migration",
-//       description: "Migrate from MySQL to PostgreSQL",
-//       status: "completed",
-//       dueDate: "2023-10-15",
-//     },
-//   ]);
-
-//   const [isFormOpen, setIsFormOpen] = useState(false);
-//   const [currentProject, setCurrentProject] = useState(null);
-
-//   const addProject = (project) => {
-//     const newProject = {
-//       ...project,
-//       id: Date.now().toString(),
-//     };
-//     setProjects([...projects, newProject]);
-//     setIsFormOpen(false);
-//   };
-
-//   const updateProject = (updatedProject) => {
-//     setProjects(
-//       projects.map((project) =>
-//         project.id === updatedProject.id ? updatedProject : project
-//       )
-//     );
-//     setIsFormOpen(false);
-//     setCurrentProject(null);
-//   };
-
-//   const deleteProject = (id) => {
-//     setProjects(projects.filter((project) => project.id !== id));
-//   };
-
-//   const openEditForm = (project) => {
-//     setCurrentProject(project);
-//     setIsFormOpen(true);
-//   };
-
-//   return (
-//     <div className="container mx-auto px-4 py-8">
-//       <div className="flex justify-between items-center mb-8">
-//         <h1 className="text-3xl font-bold text-gray-800">Quản lý dự án</h1>
-//         <Button
-//           onClick={() => {
-//             setCurrentProject(null);
-//             setIsFormOpen(true);
-//           }}
-//           className="flex items-center gap-2"
-//         >
-//           <PlusCircle className="h-5 w-5" />
-//           Thêm dự án mới
-//         </Button>
-//       </div>
-
-//       {isFormOpen ? (
-//         <ProjectForm
-//           project={currentProject}
-//           onSubmit={currentProject ? updateProject : addProject}
-//           onCancel={() => {
-//             setIsFormOpen(false);
-//             setCurrentProject(null);
-//           }}
-//         />
-//       ) : (
-//         <ProjectList
-//           projects={projects}
-//           onEdit={openEditForm}
-//           onDelete={deleteProject}
-//         />
-//       )}
-//     </div>
-//   );
-// }
-// src/components/ProjectManagement.js
 import React, { useState } from "react";
 import { Table, Button, Modal, Form, Input, Tabs } from "antd";
 import {
@@ -125,7 +27,7 @@ export default function ProjectManagement() {
       setProjects(res.data || []);
     } catch (err) {
       console.error("Error fetching projects:", err);
-      message.error("Không thể tải danh sách dự án");
+      // message.error("Không thể tải danh sách dự án");
     }
     setLoading(false);
   };
@@ -135,16 +37,18 @@ export default function ProjectManagement() {
     try {
       if (editingProject) {
         await projectService.updateProject(editingProject.id, values);
-        message.success("Cập nhật thành công");
+        console.log("Project updated:", values);
+        // message.success("Cập nhật thành công");
       } else {
         await projectService.createProject(values);
-        message.success("Tạo mới thành công");
+        console.log("Project created:", values);
+        // message.success("Tạo mới thành công");
       }
       fetchProjects();
       setIsModalVisible(false);
     } catch (err) {
       console.error("Error saving project:", err);
-      message.error("Thao tác thất bại");
+      // message.error("Thao tác thất bại");
     }
   };
 
@@ -159,11 +63,12 @@ export default function ProjectManagement() {
   const deleteProject = async (id) => {
     try {
       await projectService.deleteProject(id);
-      message.success("Xóa thành công");
+      console.log("Project deleted:", id);
+      // message.success("Xóa thành công");
       fetchProjects();
     } catch (err) {
       console.error("Error deleting project:", err);
-      message.error("Không thể xóa dự án");
+      // message.error("Không thể xóa dự án");
     }
   };
 
@@ -231,7 +136,7 @@ export default function ProjectManagement() {
       {/* Modal Create/Edit Project */}
       <Modal
         title={editingProject ? "Sửa Dự Án" : "Thêm Dự Án"}
-        visible={isModalVisible}
+        open={isModalVisible}
         onOk={() => form.submit()}
         onCancel={() => setIsModalVisible(false)}
         okText={editingProject ? "Cập nhật" : "Tạo mới"}
@@ -281,19 +186,20 @@ function ProjectMembers({ projectId }) {
       setMembers(res.data || []);
     } catch (err) {
       console.error("Error fetching members:", err);
-      message.error("Không thể tải danh sách thành viên");
+      // message.error("Không thể tải danh sách thành viên");
     }
   };
 
   const addMember = async (values) => {
     try {
       await projectService.addProjectMember(projectId, values);
-      message.success("Thêm thành viên thành công");
+      console.log("Member added:", values);
+      // message.success("Thêm thành viên thành công");
       fetchMembers();
       setIsAddModalVisible(false);
     } catch (err) {
       console.error("Error adding member:", err);
-      message.error("Thêm thất bại");
+      // message.error("Thêm thất bại");
     }
   };
 
@@ -317,9 +223,7 @@ function ProjectMembers({ projectId }) {
     {
       title: "Hành động",
       key: "action",
-      render: () => (
-        <Button size="small" danger icon={<Trash2 size={14} />} />
-      ),
+      render: () => <Button size="small" danger icon={<Trash2 size={14} />} />,
     },
   ];
 
@@ -327,13 +231,15 @@ function ProjectMembers({ projectId }) {
     <div>
       <div className="mb-4 flex justify-end">
         <Button
-          icon={
-            <>
-              <AddMemberIcon size={14} className="mr-1" /> Thêm Thành Viên
-            </>
-          }
-          onClick={() => setIsAddModalVisible(true)}
-        />
+          type="primary"
+          icon={<AddMemberIcon size={14} />}
+          onClick={() => {
+            // memberForm.resetFields();
+            setIsAddModalVisible(true);
+          }}
+        >
+          Thêm Thành Viên
+        </Button>
       </div>
 
       <Table
@@ -346,7 +252,7 @@ function ProjectMembers({ projectId }) {
       {/* Add Member Modal */}
       <Modal
         title="Thêm Thành Viên"
-        visible={isAddModalVisible}
+        open={isAddModalVisible}
         onOk={() => memberForm.submit()}
         onCancel={() => setIsAddModalVisible(false)}
         okText="Thêm"

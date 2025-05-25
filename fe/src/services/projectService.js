@@ -3,58 +3,64 @@ import authHeader from "./authHeader";
 
 const API_URL = "http://localhost:8080/api/v1/projects/";
 
-// Project CRUD operations
-const getAllProjects = () => {
-  return axios.get(API_URL, { headers: authHeader() });
+// Tạo instance Axios với base URL và interceptor tự động thêm header
+const apiClient = axios.create({
+  baseURL: API_URL,
+});
+
+// Tự động thêm auth header cho tất cả request
+apiClient.interceptors.request.use(config => {
+  config.headers = {
+    ...config.headers,
+    ...authHeader(),
+  };
+  return config;
+});
+
+// Project CRUD
+const getAllProjects = () => apiClient.get("");
+const createProject = (data) => apiClient.post("create", data);
+const getProjectById = (id) => apiClient.get(id);
+const updateProject = (id, data) => apiClient.put(id, data);
+const deleteProject = (id) => apiClient.delete(id);
+const deleteAllProjects = () => apiClient.delete("");
+
+// Lấy tất cả project của user
+const getAllProjectsByUser = (userId) => {
+  return apiClient.get(`user/${userId}/getAllProjectsByUser`);
 };
 
-const createProject = (data) => {
-  return axios.post(API_URL + "create", data, { headers: authHeader() });
-};
 
-const getProjectById = (id) => {
-  return axios.get(API_URL + id, { headers: authHeader() });
-};
 
-const updateProject = (id, data) => {
-  return axios.put(API_URL + id, data, { headers: authHeader() });
-};
-
-const deleteProject = (id) => {
-  return axios.delete(API_URL + id, { headers: authHeader() });
-};
-
-const deleteAllProjects = () => {
-  return axios.delete(API_URL, { headers: authHeader() });
-};
-
-// Project member operations
+// Quản lý thành viên dự án
 const addProjectMember = (projectId, memberData) => {
-  return axios.post(API_URL + projectId + "/add-member", memberData, { headers: authHeader() });
+  return apiClient.post(`${projectId}/members`, memberData);
 };
 
-const updateProjectMember = (projectId, memberData) => {
-  return axios.post(API_URL + projectId + "/update-member", memberData, { headers: authHeader() });
+const updateProjectMember = (projectId, memberId, role) => {
+  return apiClient.put(`${projectId}/members/${memberId}`, { role });
 };
 
-const removeProjectMember = (projectId, memberData) => {
-  return axios.post(API_URL + projectId + "/remove-member", memberData, { headers: authHeader() });
+const removeProjectMember = (projectId, memberId) => {
+  return apiClient.delete(`${projectId}/members/${memberId}`);
 };
 
 const getProjectMembers = (projectId) => {
-  return axios.get(API_URL + projectId + "/getAllMember", { headers: authHeader() });
+  return apiClient.get(`${projectId}/members`);
 };
 
 const projectService = {
-  // Project CRUD
+  // CRUD Projects
   getAllProjects,
   createProject,
   getProjectById,
   updateProject,
   deleteProject,
   deleteAllProjects,
+  getAllProjectsByUser,
+  
 
-  // Project member operations
+  // Members
   addProjectMember,
   updateProjectMember,
   removeProjectMember,

@@ -1,36 +1,54 @@
-// src/services/companyService.js
+import axios from "axios";
+import authHeader from "./authHeader";
 
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const API_URL = "http://localhost:8080/api/v1/companies/";
 
-let companies = [
-  {
-    id: 1,
-    name: "Công ty A",
-    address: "123 Đường ABC",
-    phone: "0909123456",
-    email: "congtyA@example.com",
-  },
-];
+// Tạo instance của axios với cấu hình chung
+const apiClient = axios.create({
+  baseURL: API_URL,
+});
 
+// Thêm header xác thực vào mọi request
+apiClient.interceptors.request.use(config => {
+  config.headers = {
+    ...config.headers,
+    ...authHeader(),
+  };
+  return config;
+});
+
+// Public content (không cần token)
+const getPublicContent = () => {
+  return axios.get(API_URL + "test/all"); // Ví dụ route public
+};
+
+// Các API dành cho authenticated user
+const getAllCompanies = () => {
+  return apiClient.get(""); // GET /api/v1/companies/
+};
+
+const getCompanyById = (id) => {
+  return apiClient.get(id); // GET /api/v1/companies/{id}
+};
+
+const createCompany = (data) => {
+  return apiClient.post("create", data); // POST /api/v1/companies/create
+};
+
+const updateCompany = (id, data) => {
+  return apiClient.put(id, data); // PUT /api/v1/companies/{id}
+};
+
+const deleteCompany = (id) => {
+  return apiClient.delete(id); // DELETE /api/v1/companies/{id}
+};
+
+// Xuất tất cả các hàm
 export default {
-  getAllCompanies: async () => {
-    await delay(500);
-    return { data: [...companies] };
-  },
-
-  createCompany: async (data) => {
-    await delay(500);
-    const newCompany = { ...data, id: Date.now() };
-    companies.push(newCompany);
-  },
-
-  updateCompany: async (id, data) => {
-    await delay(500);
-    companies = companies.map((c) => (c.id === id ? { ...c, ...data } : c));
-  },
-
-  deleteCompany: async (id) => {
-    await delay(500);
-    companies = companies.filter((c) => c.id !== id);
-  },
+  getPublicContent,
+  getAllCompanies,
+  getCompanyById,
+  createCompany,
+  updateCompany,
+  deleteCompany,
 };

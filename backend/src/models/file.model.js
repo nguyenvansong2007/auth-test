@@ -6,3 +6,4 @@ export const FileModel = (sequelize, Sequelize) => {
   });
   return file;
 };
+

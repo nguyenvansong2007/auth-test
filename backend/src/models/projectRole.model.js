@@ -17,7 +17,7 @@ export const ProjectRoleModel = (sequelize, Sequelize) => {
       },
     },
     role: {
-      type: Sequelize.ENUM('administrator', 'member'),
+      type: Sequelize.ENUM('owner', 'member'),
       allowNull: false,
     },
   });

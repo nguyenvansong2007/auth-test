@@ -3,6 +3,7 @@ import cors from "cors";
 import db from "./src/models/index.js";
 import authRoutes from "./src/routes/auth.routes.js";
 import projectRoutes from "./src/routes/project.routes.js";
+import companyRoutes from "./src/routes/company.routes.js";
 import { errorHandler } from "./src/middlewares/errorHandler.js";
 import { connectDB } from "./src/config/connectDB.js";
 import userRoutes from "./src/routes/user.routes.js";
@@ -42,7 +43,6 @@ const Role = db.role;
 // });
 
 
-// initial();
 
 
 db.sequelize.sync()
@@ -64,6 +64,9 @@ app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/projects", projectRoutes);
 app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/uploads", uploadRoutes);
+app.use("/api/v1/companies", companyRoutes);
+
+
 // unhandle route
 app.all('*', (req, res, next) => {
   const err = new Error('the route cannot be found');

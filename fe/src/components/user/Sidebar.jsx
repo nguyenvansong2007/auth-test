@@ -1,28 +1,17 @@
 import React from "react";
-import {
-  Settings,
-  Users,
-  Building,
-  FileText,
-  BookOpen,
-  Grid,
-  Calendar,
-  Home,
-} from "lucide-react";
+import { Users, FileText, Grid, Cog, BookA } from "lucide-react";
 
-const Sidebar = ({ activeTab, onTabChange }) => {
+const Sidebar = ({ activeTab, onSidebarItemClick }) => {
   const tabs = [
-    // { id: "home", label: "Home", icon: Home },
-    { id: "projects", label: "Dự án", icon: Grid },
-    { id: "calendar", label: "Lịch", icon: Calendar },
+    // { id: "projects", label: "Dự án", icon: Grid },
+    { id: "myProject", label: "Dự án của tôi", icon: BookA },
     { id: "documents", label: "Tài liệu", icon: FileText },
     { id: "team", label: "Đội nhóm", icon: Users },
-    { id: "companies", label: "Công ty", icon: Building },
-    { id: "settings", label: "Cài đặt", icon: Settings },
+    { id: "settings", label: "Cài đặt", icon: Cog },
   ];
 
   return (
-    <div>
+    <>
       <aside className="w-64 border-r border-gray-200 hidden md:block">
         <nav className="p-4 space-y-4">
           {tabs.map((tab) => {
@@ -30,7 +19,7 @@ const Sidebar = ({ activeTab, onTabChange }) => {
             return (
               <div
                 key={tab.id}
-                onClick={() => onTabChange(tab.id)}
+                onClick={() => onSidebarItemClick(tab.id)}
                 className={`flex items-center cursor-pointer ${
                   activeTab === tab.id
                     ? "text-blue-600 font-medium"
@@ -44,7 +33,7 @@ const Sidebar = ({ activeTab, onTabChange }) => {
           })}
         </nav>
       </aside>
-    </div>
+    </>
   );
 };
 

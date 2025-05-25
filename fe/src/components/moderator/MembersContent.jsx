@@ -1,14 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  Plus,
-  Search,
-  Edit,
-  Trash2,
-  Eye,
-  X,
-  Check,
-  AlertCircle,
-} from "lucide-react";
+import { Plus, Search, Edit, Trash2, X } from "lucide-react";
 import UserService from "../../services/userService";
 
 const MembersContent = () => {

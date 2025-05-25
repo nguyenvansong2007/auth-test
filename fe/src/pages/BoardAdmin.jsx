@@ -6,7 +6,7 @@ import MembersContent from "../components/admin/MembersContent";
 import CompaniesContent from "../components/admin/CompaniesContent";
 import TemplatesContent from "../components/admin/TemplatesContent";
 import SettingsContent from "../components/admin/SettingsContent";
-
+import ProjectsContent from "../components/admin/ProjectsContent";
 const BoardAdmin = () => {
   const [activeTab, setActiveTab] = useState("dashboard");
 
@@ -29,6 +29,7 @@ const BoardAdmin = () => {
           {activeTab === "dashboard" && <DashboardContent />}
           {activeTab === "members" && <MembersContent />}
           {activeTab === "companies" && <CompaniesContent />}
+          {activeTab === "projects" && <ProjectsContent />}
           {activeTab === "templates" && <TemplatesContent />}
           {activeTab === "settings" && <SettingsContent />}
         </main>

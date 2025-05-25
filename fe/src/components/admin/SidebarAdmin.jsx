@@ -1,10 +1,11 @@
-import { Settings, Users, Building, Grid, Package } from "lucide-react";
+import { Settings, Users, Building, Grid, Package,FolderOpenDot } from "lucide-react";
 
 const SidebarAdmin = ({ activeTab, onSidebarItemClick }) => {
   const tabs = [
     { id: "dashboard", label: "Bảng điều khiển", icon: Grid },
     { id: "members", label: "Quản lý tài khoản", icon: Users },
     { id: "companies", label: "Quản lý công ty", icon: Building },
+    { id: "projects", label: "Quản lý dự án", icon: FolderOpenDot },
     { id: "templates", label: "Mẫu  dự án", icon: Package },
     { id: "settings", label: "Cài đặt", icon: Settings },
   ];

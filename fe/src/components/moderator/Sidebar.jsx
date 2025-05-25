@@ -1,15 +1,16 @@
-import { Settings, Users, FileCheck, Home } from "lucide-react";
+import { Cog, Users, FileCheck, Home, ClipboardMinus, Grid, FolderOpenDot } from "lucide-react";
 
 const Sidebar = ({ activeTab, onSidebarItemClick }) => {
   const tabs = [
-    { id: "dashboard", label: "Bảng điều khiển", icon: Home },
+    { id: "dashboard", label: "Bảng điều khiển", icon: Grid },
+    { id: "projects", label: "Quản lý dự án", icon: FolderOpenDot },
     { id: "approvals", label: "Phê duyệt", icon: FileCheck },
     { id: "users", label: "Quản lý thành viên", icon: Users },
-    { id: "settings", label: "Cài đặt", icon: Settings },
+    { id: "settings", label: "Cài đặt", icon: Cog },
   ];
 
   return (
-    <div>
+    <>
       <aside className="w-64 border-r border-gray-200 hidden md:block">
         <nav className="p-4 space-y-4">
           {tabs.map((tab) => {
@@ -31,7 +32,7 @@ const Sidebar = ({ activeTab, onSidebarItemClick }) => {
           })}
         </nav>
       </aside>
-    </div>
+    </>
   );
 };
 

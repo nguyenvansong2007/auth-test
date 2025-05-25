@@ -23,7 +23,7 @@ const MembersContent = () => {
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      const response = await userService.getAllUser();
+      const response = await userService.getAllUsers();
       setUsers(response.data);
     } catch (err) {
       console.error("Error fetching users:", err);
@@ -94,9 +94,7 @@ const MembersContent = () => {
       key: "roles",
       // render: (roles) => roles.join(", ") || "-",
       render: (roles) =>
-        Array.isArray(roles)
-          ? roles.map((role) => role.name).join(", ")
-          : "-",
+        Array.isArray(roles) ? roles.map((role) => role.name).join(", ") : "-",
     },
     {
       title: "Actions",
@@ -130,7 +128,6 @@ const MembersContent = () => {
   ];
 
   return (
-    
     <div className="p-6">
       <div className="mb-4">
         <Button

@@ -7,15 +7,9 @@ const Op = Sequelize.Op;
 export const createProject = async (req, res) => {
   try {
     const project = await Project.create({
-      projectName: req.body.projectName,
+      name: req.body.name,
       description: req.body.description,
-      // projectNumber: req.body.projectNumber,
-      // projectType: req.body.projectType,
-      // template: req.body.template,
-      // address: req.body.address,
-      // timeZone: req.body.timeZone,
-      // projectValue: req.body.projectValue,
-      // createdBy: req.userId,
+      createdBy: req.userId
     });
     // Lấy thông tin người dùng từ bảng User
     const creator = await User.findByPk(
@@ -34,7 +28,7 @@ export const createProject = async (req, res) => {
         username: creator.username,
         email: creator.email,
       },
-     
+
     });
   } catch (error) {
     console.error("Error creating project:", error);
@@ -59,6 +53,7 @@ export const findAllProject = async (req, res) => {
   }
 };
 
+
 // Get one project by ID
 export const findOneProject = async (req, res) => {
   try {
@@ -69,6 +64,7 @@ export const findOneProject = async (req, res) => {
     res.status(500).json({ message: "Error retrieving project." });
   }
 };
+
 
 // Update project
 export const updateProject = async (req, res) => {
@@ -87,6 +83,7 @@ export const updateProject = async (req, res) => {
   }
 };
 
+
 // Delete project
 export const deleteProject = async (req, res) => {
   try {
@@ -104,6 +101,7 @@ export const deleteProject = async (req, res) => {
   }
 };
 
+
 // Delete all projects
 export const deleteAllProject = async (req, res) => {
   try {
@@ -113,6 +111,7 @@ export const deleteAllProject = async (req, res) => {
     res.status(500).json({ message: "Error deleting all projects." });
   }
 };
+
 
 // Add member to a project
 export const addMember = async (req, res) => {
@@ -129,10 +128,10 @@ export const addMember = async (req, res) => {
     const user = await User.findOne({ where: { email } });
     if (!user) return res.status(404).json({ error: "User not found" });
 
-    await ProjectMember.create({
+    await projectRole.create({
       userId: user.id,
       projectId,
-      role: role === "administrator" ? "administrator" : "member",
+      role: role === "owner" ? "owner" : "member",
     });
 
     res.json({ message: "Member added successfully" });
@@ -140,6 +139,7 @@ export const addMember = async (req, res) => {
     res.status(500).json({ error: "Error adding member" });
   }
 };
+
 
 // Update member role
 export const updateMember = async (req, res) => {
@@ -156,7 +156,7 @@ export const updateMember = async (req, res) => {
     const user = await User.findOne({ where: { email } });
     if (!user) return res.status(404).json({ error: "User not found" });
 
-    const updated = await ProjectMember.update(
+    const updated = await projectRole.update(
       { role: newRole },
       { where: { projectId, userId: user.id } }
     );
@@ -186,7 +186,7 @@ export const removeMember = async (req, res) => {
     const user = await User.findOne({ where: { email } });
     if (!user) return res.status(404).json({ error: "User not found" });
 
-    const deleted = await ProjectMember.destroy({
+    const deleted = await projectRole.destroy({
       where: { projectId, userId: user.id },
     });
 
@@ -223,5 +223,41 @@ export const getProjectMembers = async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: "Error retrieving project members" });
+  }
+};
+
+
+
+
+
+
+export const getAllProjectsCreatedByUser = async (req, res) => {
+  try {
+    // Giả sử req.user.id là ID của người dùng đang đăng nhập (có từ auth middleware)
+    const userId = req.userId
+
+    const user = await db.user.findByPk(userId, {
+      include: [
+        {
+          model: db.project,
+          as: "projects", // alias trong User.hasMany(Project)
+          attributes: ["id", "name", "description", "createdAt", "updatedAt"]
+        }
+      ],
+      attributes: ["id", "username", "email"]
+    });
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    return res.status(200).json({
+      user: user.username,
+      data: user.projects
+    });
+
+  } catch (error) {
+    console.error("Error fetching created projects:", error);
+    return res.status(500).json({ message: "Server error", error: error.message });
   }
 };
